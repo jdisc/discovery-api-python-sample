@@ -1,0 +1,5692 @@
+# Java enumeration mapping for com.jdisc.inventory.common.enums.SoftwareLicenseStatus
+enum SoftwareLicenseStatus {
+  Unlicensed,
+  Licensed,
+  OOB_Grace,
+  OOT_Grace,
+  NonGenuinceGrace,
+  Notification,
+  Serialized
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.virtualization.DatacenterType
+"""The virtual datacenter type"""
+enum DatacenterType {
+  VMware
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.ClusterType
+"""A cluster's type"""
+enum ClusterType {
+  VeritasCluster,
+  ServiceGuard,
+  MicrosoftCluster,
+  OracleSolaris,
+  RedHatCluster,
+  VRRPCluster,
+  HSRPCluster,
+  CitrixXenServerCluster,
+  VMwareCluster,
+  KVMServerCluster,
+  AIXCluster,
+  FortinetHA,
+  JuniperHA,
+  PacemakerCluster,
+  SonicwallCluster,
+  F5BigIPCluster,
+  NutanixStorageCluster,
+  NetApp,
+  NetAppOntapSelect,
+  WatchGuard,
+  MicrosoftNLB
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.service.ServiceFailureAction
+enum ServiceFailureAction {
+  None,
+  Restart,
+  Reboot,
+  RunCommand,
+  NotifyUser
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.devicedata.ConnectorType
+"""The relation type for relations between two devices"""
+enum ConnectorType {
+  Unknown,
+  Other,
+  Male,
+  Female,
+  Shielded,
+  Unshielded,
+  SCSI_A_High_Density_50_pins,
+  SCSI_A_Low_Density_50_pins,
+  SCSI_P_High_Density_68_pins,
+  SCSI_SCA_I_80_pins,
+  SCSI_SCA_II_80_pins,
+  SCSI_Fibre_Channel_DB_9_Copper,
+  SCSI_Fibre_Channel_Fibre,
+  SCSI_Fibre_Channel_SCA_II_40_pins,
+  SCSI_Fibre_Channel_SCA_II_20_pins,
+  SCSI_Fibre_Channel_BNC,
+  ATA_3_1_2_Inch_40_pins,
+  ATA_2_1_2_Inch_44_pins,
+  ATA_2,
+  ATA_3,
+  ATA_66,
+  DB_9,
+  DB_15,
+  DB_25,
+  DB_36,
+  RS_232C,
+  RS_422,
+  RS_423,
+  RS_485,
+  RS_449,
+  V_35,
+  X_21,
+  IEEE_488,
+  AUI,
+  Category_3,
+  Category_4,
+  UTP_Category_5,
+  BNC,
+  RJ11,
+  RJ45,
+  Fiber_MIC,
+  Apple_AUI,
+  Apple_GeoPort,
+  PCI,
+  ISA,
+  EISA,
+  VESA,
+  PCMCIA,
+  PCMCIA_Type_I,
+  PCMCIA_Type_II,
+  PCMCIA_Type_III,
+  ZV_Port,
+  CardBus,
+  USB,
+  IEEE_1394,
+  HIPPI,
+  HSSDC_6_pins,
+  GBIC,
+  DIN,
+  Mini_DIN,
+  Micro_DIN,
+  PS_2,
+  Infrared,
+  HP_HIL,
+  Access_bus,
+  NuBus,
+  Centronics,
+  Mini_Centronics,
+  Mini_Centronics_Type_14,
+  Mini_Centronics_Type_20,
+  Mini_Centronics_Type_26,
+  BusMouse,
+  ADB,
+  AGP,
+  VME_Bus,
+  VME64,
+  Proprietary,
+  Proprietary_Processor_Card_Slot,
+  Proprietary_Memory_Card_Slot,
+  Proprietary_IO_Riser_Slot,
+  PCI_66,
+  AGP2X,
+  AGP4X,
+  PC_98,
+  PC_98_Hireso,
+  PC_H98,
+  PC_98Note,
+  PC_98Full,
+  PCI_X,
+  SSA_SCSI,
+  Circular,
+  On_Board_IDE_Connector,
+  On_Board_Floppy_Connector,
+  Dual_Inline_9_Ping,
+  Dual_Inline_25_Pin,
+  Dual_Inline_50_Pin,
+  Dual_Inline_68_Ping,
+  On_Board_Sound_Connector,
+  Mini_Jack,
+  PCI_X2,
+  Sbus_IEEE_1396_1993_32_Bit,
+  Sbus_IEEE_1396_1993_64_Bit,
+  MCA,
+  GIO,
+  XIO,
+  HIO,
+  NGIO,
+  PMC,
+  MTRJ,
+  VF_45,
+  Future_IO,
+  SC,
+  SG,
+  Electrical,
+  Optical,
+  Ribbon,
+  GLM,
+  _1x9,
+  Mini_SG,
+  LC,
+  HSSC,
+  VHDCI_Shielded_68_pins,
+  InfiniBand,
+  AGP8X,
+  PCI_E,
+  VMwareVirtualInstance,
+  MSVirtualServerInstance,
+  SolarisZone,
+  HPIntegrityVM,
+  MSHyperVInstance,
+  XenInstance,
+  SolarisLDom,
+  VirtualBoxInstance,
+  KVMVirtualInstance,
+  IbmLPar,
+  CitrixXenInstance,
+  HPIntegrityVPar,
+  LXCVirtualInstance,
+  DockerVirtualInstance,
+  VFilerInstance,
+  F5Appliance,
+  VServerInstance,
+  F5VirtualServer,
+  ManagedVirtualizationServer,
+  BladeChassisMember,
+  DirectlyAttachedDevice,
+  AttachedDiskArray,
+  AttachedManagementDevice,
+  StackedSwitch,
+  AttachedComputeNode,
+  DirectlyAttachedLocalVirtualSwitch,
+  LLDPMED
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.accounts.AccountType
+enum AccountType {
+  User,
+  Administrative,
+  Discovered,
+  Undefined,
+  VmwareAPI,
+  Http,
+  DiscoveredCloud
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.SortOrder
+"""The sort order within reports"""
+enum SortOrder {
+  ASCENDING,
+  DESCENDING,
+  UNSORTED
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.ProcessorStatus
+enum ProcessorStatus {
+  Enabled,
+  DisabledByUserViaBIOS,
+  DisabledByBiosPostError,
+  Idle
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.server.plugin.ApplicationStartMode
+enum ApplicationStartMode {
+  Started,
+  StartedReporting,
+  Stopped
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.rmiinterface.admin.license.LicenseStatus
+"""The license status"""
+enum LicenseStatus {
+  Valid,
+  Invalid
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.DiskPartitionType
+"""The disk parition type"""
+enum DiskPartitionType {
+  Other,
+  GPT,
+  MBR,
+  IFS
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.connection.PortConnectionType
+"""The port type."""
+enum PortConnectionType {
+  Tcp,
+  Udp,
+  Sctp
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.service.ServiceStatus
+enum ServiceStatus {
+  Running,
+  StartPending,
+  Stopped,
+  StopPending,
+  Paused,
+  PausePending,
+  ContinuePending,
+  Undefined,
+  Degraded,
+  Disabled,
+  Maintenance,
+  Uninitialized,
+  Static
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.users.InventoryUserRight
+"""A user right assigned to a user"""
+enum InventoryUserRight {
+  ControlDiscovery,
+  ChangeDiscoverySettings,
+  ViewData,
+  ManageUsers,
+  ManageDevices,
+  Admin,
+  ManageMaps,
+  CreateRemoveArchives,
+  ManageInventoryServers,
+  ManageCustomReports,
+  ManageCustomAttributes,
+  EditCustomAttributes,
+  ManageCustomScripts,
+  ManageDocuments,
+  ViewDocuments,
+  ManageHistory,
+  BrowseWbemData,
+  ManageNetworkLocations,
+  DiscoverSingleDevice,
+  CreateSupportZIP,
+  ManageMailAccounts,
+  ManageScheduledMailReportJobs,
+  ManageScheduledReportExportJobs,
+  ScheduleReports,
+  ManageShiUploadJobs,
+  ManageLogging,
+  PollMeasurements,
+  ChangeMeasurementConfiguration,
+  DeleteMeasurementData,
+  ManageApplications
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.DeviceType
+"""A device's type"""
+enum DeviceType {
+  AllDevices,
+  NetworkingDevice,
+  Hub,
+  Router,
+  Switch,
+  RoutingSwitch,
+  Firewall,
+  AccessPoint,
+  Modem,
+  Analyser,
+  Gateway,
+  Concentrator,
+  Bridge,
+  Repeater,
+  PortServer,
+  ConsoleSwitch,
+  ConsoleServer,
+  BladeSwitch,
+  ServerNetSwitch,
+  BladeServerNetSwitch,
+  InfiniBandSwitch,
+  BladeInfiniBandSwitch,
+  OpticalSwitch,
+  PatchField,
+  VPNRouter,
+  AccessPointController,
+  LoadBalancer,
+  DeviceConnector,
+  WirelessDslRouter,
+  Receiver,
+  CorrelationReceiver,
+  WlanRepeater,
+  NetworkMonitor,
+  TimeServer,
+  StackedSwitch,
+  DslRouter,
+  AggregationDevice,
+  UMTSRouter,
+  Chassis,
+  RackChassis,
+  DiskCage,
+  ApplicationFirewall,
+  WebApplicationFirewall,
+  PacketBroker,
+  VirtualSwitch,
+  LocalVirtualSwitch,
+  DistributedVirtualSwitch,
+  ASAM,
+  Computer,
+  ClientComputer,
+  Server,
+  RackServer,
+  BladeServer,
+  Desktop,
+  Laptop,
+  PDAThinClient,
+  MiniTower,
+  Tower,
+  DTC,
+  MediaServer,
+  TerminalServer,
+  Workstation,
+  Terminal,
+  XTerminal,
+  VirtualComputer,
+  VMwareInstance,
+  MiniTowerServer,
+  TowerServer,
+  MSVMInstance,
+  ThinClient,
+  SolarisZone,
+  IBMLPar,
+  IntegrityVM,
+  MSHyperVInstance,
+  XenInstance,
+  KVMInstance,
+  SunVirtualBoxInstance,
+  VirtualIronInstance,
+  ParallelsInstance,
+  BladeWorkstation,
+  SolarisLDom,
+  MiniDesktop,
+  VMwareWebGatewayAppliance,
+  PizzaBox,
+  BochsInstance,
+  VMwareAppliance,
+  VMwareManagementAppliance,
+  MSHyperVAppliance,
+  KVMAppliance,
+  VMwareSecurityAppliance,
+  TabletComputer,
+  ChangeTerminalIdentityCard,
+  CitrixXenInstance,
+  IntegrityVPar,
+  ContainerVirtualization,
+  LxcContainer,
+  VMwareIPGatewayAppliance,
+  DockerContainer,
+  ComputeNode,
+  vFiler,
+  RackPC,
+  F5Appliance,
+  MiniPC,
+  vServer,
+  VirtualAppliance,
+  VirtualDiskArrayAppliance,
+  VirtualSwitchAppliance,
+  F5VirtualServer,
+  XCPNGInstance,
+  DSLModem,
+  IndustrialPC,
+  ZVMVirtualMachine,
+  AccessPointControllerAppliance,
+  ImagingAndPrinting,
+  Printer,
+  Scanner,
+  Fax,
+  PrintServer,
+  MultifunctionalDevice,
+  Projector,
+  DigitalSender,
+  BarcodeScanner,
+  ReceiptPrinter,
+  CardPrinter,
+  BarcodePositioningSystem,
+  BarcodePrinter,
+  PresentationGateway,
+  StorageDevice,
+  TapeLibrary,
+  FibreChannelHub,
+  FibreChannelSwitch,
+  FibreChannelBridge,
+  FibreChannelAnalyser,
+  DiskArray,
+  TapeDrive,
+  FibreChannelRouter,
+  BackupDevice,
+  BladeStorageDevice,
+  BladeDiskArray,
+  BladeTapeDrive,
+  FibreChannelGateway,
+  FibreChannelConverter,
+  BladeFibreChannelSwitch,
+  SASSwitch,
+  BladeSASSwitch,
+  NAS,
+  RaidController,
+  FloppyDiskDrive,
+  USBStick,
+  SanController,
+  FlashArray,
+  TelephonyDevice,
+  IPTelephonyDevice,
+  Phone,
+  IPPhone,
+  IPVoiceGateway,
+  ISDNGateway,
+  AccessNode,
+  IPVoiceAdapter,
+  DectAntenna,
+  DoorPhone,
+  MobileCard,
+  DectStation,
+  SMSModem,
+  PABX,
+  DSLAM,
+  MSAN,
+  ManagementDevice,
+  BladeEnclosure,
+  WlanController,
+  DiskArrayController,
+  SecurityManagementDevice,
+  UnassignedDevice,
+  NoAgentDevice,
+  UnknownDevice,
+  PowerDevice,
+  UPS,
+  PDU,
+  PowerSupply,
+  BladePowerSupply,
+  ATS,
+  CoolingDevice,
+  Fan,
+  BladeFan,
+  Rack,
+  RackControl,
+  Appliance,
+  SecurityAppliance,
+  WANAppliance,
+  PrintServerAppliance,
+  WebCachingAppliance,
+  VpnAppliance,
+  NetworkMonitoringAppliance,
+  WebGatewayAppliance,
+  EMailAppliance,
+  NetworkAutomationAppliance,
+  ManagementAppliance,
+  PrinterManagementAppliance,
+  VideoCommunication,
+  VideoTelephone,
+  VideoConferencingDevice,
+  VideoServer,
+  Monitor,
+  TouchMonitor,
+  SmartTV,
+  DVBGateway,
+  Converter,
+  IOModule,
+  BladeIOModule,
+  ClusterService,
+  VeritasClusterService,
+  ServiceGuardClusterPackage,
+  CardReader,
+  PinPad,
+  SmartcardReader,
+  MemoryCardReader,
+  IndustrialControlSystem,
+  FieldBusController,
+  AutomationController,
+  EnvironmentMonitor,
+  CommunicationController,
+  MultifunctionalTerminal,
+  TemperatureSensor,
+  FingerprintScanner,
+  TimeManagementTerminal,
+  PhotovoltaicController,
+  ProgrammingDevice,
+  PowerSensor,
+  VideoEncoder,
+  AlarmDevice,
+  IntrudorDetectionDevice,
+  Camera,
+  WebCam,
+  UsbCam,
+  Camcorder,
+  UsbDongle,
+  UsbToEthernetAdapter,
+  UsbUmtsAdapter,
+  UsbToBluetoothAdapter,
+  Smartphone,
+  SmartWatch,
+  NavigationDevice,
+  InputDevice,
+  Keyboard,
+  Mouse,
+  RemoteControl,
+  Microphone,
+  GameController,
+  Headset,
+  Pen,
+  Tester,
+  CloudService
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.windows.disk.DiskEncryptionMethod
+"""Defines how a logical drive is encrypted."""
+enum DiskEncryptionMethod {
+  None,
+  Bitlocker,
+  FileVault
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.service.ServiceStartupMode
+enum ServiceStartupMode {
+  Automatic,
+  Manual,
+  Disabled,
+  Undefined,
+  Boot,
+  System
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.webui.datastructures.preferences.uiprefs.UIDensity
+"""The table density in the web user interface."""
+enum UIDensity {
+  Compact,
+  Cozy,
+  Comfortable
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.devicedata.ConnectorState
+"""The state for a relation between two devices. This state is used
+for instance for virtualation relations between the physical host and the VM
+in order to indicate the virtual machine state"""
+enum ConnectorState {
+  Unknown,
+  Running,
+  Stopped,
+  Suspended,
+  Pending,
+  Paused,
+  Pausing,
+  Resuming,
+  Saving,
+  Snapshotting,
+  Starting,
+  Stopping,
+  Configured,
+  Blocked,
+  Dying,
+  Crashed,
+  Creating,
+  Deallocating,
+  Deallocated,
+  Migrating,
+  Rebuilding,
+  Intune
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.reporting.base.BuiltInReport
+"""The constants for the built in reports"""
+enum BuiltInReport {
+  IP4_NETWORK_REPORT_ID,
+  IP6_NETWORK_REPORT_ID,
+  DEFAULT_GATEWAYS_REPORT_ID,
+  DNS_SERVER_REPORT_ID,
+  DHCP_SERVER_REPORT_ID,
+  DIRECTORY_REPORT_ID,
+  DIRECTORY_USER_REPORT_ID,
+  NETWORK_NEIGHBORHOOD_REPORT_ID,
+  DEVICE_REPORT_ID,
+  DEVICE_HOSTNAME_REPORT_ID,
+  DIRECTORY_COMPUTERACCOUNT_REPORT_ID,
+  DEVICE_TIER_REPORT_ID,
+  DEVICE_SHARE_REPORT_ID,
+  DEVICE_GLOBAL_SHARE_REPORT_ID,
+  DEVICE_MODEL_REPORT_ID,
+  DEVICE_OSVERSION_REPORT_ID,
+  DEVICE_OSVERSION_PATCH_REPORT_ID,
+  DEVICE_OSFAMILY_REPORT_ID,
+  DEVICE_TYPE_REPORT_ID,
+  DUPLICATE_DEVICES_REPORT_ID,
+  DEVICE_MANAGED_VIRTUALIZATION_SERVERS_REPORT_ID,
+  DEVICE_MANAGED_VIRTUAL_INSTANCES_REPORT_ID,
+  DEVICE_VM_MOTION_EVENT_REPORT_ID,
+  DEVICE_MANAGED_DATACENTERS_REPORT_ID,
+  RANGES_REPORT_ID,
+  DEVICES_ROLES_REPORT_ID,
+  DEVICE_BY_GROUP_REPORT_ID,
+  DEVICE_LOAD_BALANCER_CONFIGURATION_ID,
+  DEVICE_DELETION_LOG_REPORT_ID,
+  DEVICE_VIRTUAL_SERVER_AND_INSTANCE_REPORT_ID,
+  DEVICE_VIRTUAL_SERVER_REPORT_ID,
+  DEVICE_VIRTUAL_DATACENTERS_REPORT_ID,
+  DEVICE_VIRTUAL_INSTANCES_REPORT_ID,
+  VIRTUAL_MANAGEMENT_REPORT_ID,
+  DEVICE_MANAGED_DISTRIBUTED_SWITCHES_REPORT_ID,
+  VIRTUALIZATION_EXPLORER_REPORT_ID,
+  NETWORK_PROPERTIES_ID,
+  ISCSI_IQN_REPORT_DESCRIPTION,
+  DEVICE_MANUFACTURER_REPORT_ID,
+  DEVICE_DETAILS_ID,
+  GENERAL_DEVICE_DATA_ID,
+  DEVICE_SNMP_AGENT_DATA_ID,
+  DEVICE_IP4INTERFACE_ID,
+  DEVICE_IPINTERFACE_CONFIG_ID,
+  DEVICE_IP4INTERFACE_VLAN_ID,
+  DEVICE_VLAN_REPORT_ID,
+  DEVICE_DISCOVERY_LOG_ID,
+  DEVICE_SYSTEMBOARD_ID,
+  DEVICE_PROCESSOR_ID,
+  DEVICE_MEMORY_MODULE_ID,
+  DEVICE_PHYSICAL_DISK_ID,
+  DEVICE_DISK_PARTITION_ID,
+  DEVICE_ATTACHED_DISK_ARRAY_REPORT_ID,
+  DEVICE_OPERATING_SYSTEM_ID,
+  DEVICE_FIRMWARE_REPORT_ID,
+  DEVICE_APPLICATION_REPORT_ID,
+  DEVICE_EXECUTABLE_FILE_REPORT_ID,
+  DEVICE_SERVICE_REPORT_ID,
+  DEVICE_PATCH_REPORT_ID,
+  DEVICE_PROTOCOL_ID,
+  DEVICE_DETAILS_PARSING_ISSUES_REPORT,
+  DEVICE_ROLES_REPORT_ID,
+  DEVICE_GROUPS_REPORT_ID,
+  ATTACHED_DEVICE_REPORT_ID,
+  DEVICE_IP4NETWORK_REPORT_ID,
+  DEVICE_IP6NETWORK_REPORT_ID,
+  DEVICE_LOGICAL_DISK_ID,
+  DEVICE_VIDEO_CONTROLLER_ID,
+  DEVICE_LOGGED_ON_USER_REPORT_ID,
+  DEVICE_PRINTER_INK_REPORT_ID,
+  DEVICE_CLOUD_USER_REPORT_ID,
+  DEVICE_LOCAL_USER_REPORT_ID,
+  DEVICE_LOCAL_USER_GROUP_REPORT_ID,
+  DEVICE_LAST_LOGGED_ON_USER_ID,
+  DEVICE_DRIVER_REPORT_ID,
+  DEVICE_PROCESS_REPORT_ID,
+  DEVICE_MODULES_REPORT_ID,
+  DEVICE_CLUSTER_REPORT_ID,
+  DEVICE_SHARED_RESOURCES_REPORT_ID,
+  DEVICE_TPM_MODULE_REPORT_ID,
+  DEVICE_WINDOWS_FEATURES_REPORT_ID,
+  DEVICE_MAPPED_PRINTERS_ID,
+  DEVICE_CERTIFICATES_REPORT_ID,
+  DEVICE_SIMCARD_REPORT_ID,
+  DEVICE_DATABASE_REPORT_ID,
+  DEVICE_DATABASE_REPORT_LIST_ID,
+  DEVICE_DATABASE_INSTANCE_LIST_REPORT_ID,
+  DEVICE_DATABASE_SCHEMA_LIST_REPORT_ID,
+  DEVICE_DATABASE_TABLE_LIST_REPORT_ID,
+  DEVICE_DATABASE_FLAT_REPORT_LIST_ID,
+  DEVICE_SUPPORT_ENTITLEMENT_ID,
+  DEVICE_MEASUREMENT_COUNTER_TREE_REPORT_ID,
+  DEVICE_DIRECTORY_INFORMATION_REPORT_ID,
+  DEVICE_ISCSI_INITIATOR_REPORT_ID,
+  DEVICE_ISCSI_TARGET_REPORT_ID,
+  DEVICE_VMSNAPSHOT_REPORT_ID,
+  DEVICE_FLAT_VMSNAPSHOT_REPORT_ID,
+  DEVICE_VMWARE_SNAPSHOT_DETAILS_REPORT_ID,
+  DEVICE_PROCESS_MODULES_REPORT_ID,
+  DEVICE_JAVA_LICENSING_SUMMARY,
+  DEVICE_JAVA_LICENSING_STATUS,
+  DEVICE_JAVA_INSTALLATIONS_ID,
+  DEVICE_JAVA_PROCESSES_ID,
+  DEVICE_DISABLED_PROTOCOLS_ID,
+  APPLICATION_ONLY_REPORT_ID,
+  APPLICATION_REPORT_ID,
+  APPLICATION_PATH_REPORT_ID,
+  APPLICATION_INSTANCE_REPORT_ID,
+  DEVICE_APPLICATION_INSTANCE_REPORT_ID,
+  PATCH_REPORT_ID,
+  SERVICE_REPORT_ID,
+  DRIVER_REPORT_ID,
+  PROCESSES_REPORT_ID,
+  CLUSTER_REPORT_ID,
+  CLUSTER_SERVICES_REPORT_ID,
+  EXECUTALE_FILE_REPORT_ID,
+  WINDOWS_FEATURES_REPORT_ID,
+  CERTIFICATES_REPORT_ID,
+  SSH_IDENTIFIER_REPORT_ID,
+  HTTP_IDENTIFIER_REPORT_ID,
+  HTTPS_IDENTIFIER_REPORT_ID,
+  JAVA_INSTALLATIONS_REPORT_ID,
+  JAVA_PROCESS_REPORT_ID,
+  SUPPORTED_DEVICES_REPORT_ID,
+  SUPPORTED_DEVICES_TABLE_REPORT_ID,
+  SUPPORTED_OS_TABLE_REPORT_ID,
+  SUPPORTED_SW_TABLE_REPORT_ID,
+  SUPPORTED_ITEMS_ISSUES_REPORT_ID,
+  CUSTOM_ATTRIBUTES_ID,
+  DISCOVERY_PROTOCOL_STATUS_REPORT_ID,
+  DEVICE_DISCOVERY_PROTOCOL_STATUS_REPORT_ID,
+  DEVICE_DISCOVERY_PROTOCOL_STATUS_SUCCESS_REPORT_ID,
+  DEVICE_DISCOVERY_PROTOCOL_STATUS_WARNING_REPORT_ID,
+  DEVICE_DISCOVERY_PROTOCOL_STATUS_ERROR_REPORT_ID,
+  UNKNOWN_SNMP_DEVICE_REPORT_ID,
+  UNKNOWN_PNP_DEVICE_REPORT_ID,
+  SNMPWALK_REPORT_ID,
+  DISCOVERY_EVENT_TYPES_REPORT_ID,
+  DISCOVERY_EVENTS_REPORT_ID,
+  DISCOVERY_DEVICE_QUEUE_REPORT_ID,
+  DISCOVERY_PING_QUEUE_REPORT_ID,
+  DISCOVERY_DOMAIN_QUEUE_REPORT_ID,
+  DISCOVERY_DIRECTORY_QUEUE_REPORT_ID,
+  UNKNOWN_TELNETBANNER_DEVICE_REPORT_ID,
+  DEVICES_WITH_PARSING_ISSUES_REPORT_ID,
+  GROUP_DEVICE_REPORT_ID,
+  SHARED_RESOURCES_USER_PERMISSIONS,
+  FILE_REPORT_ID,
+  DEVICE_OPEN_PORTS_REPORT_ID,
+  DEVICE_PORT_CONNECTIONS_REPORT_ID,
+  OPEN_PORTS_REPORT_ID,
+  DEVICE_CONNECTING_TO_PORTS_REPORT_ID,
+  CONNECTION_STATISTIC_REPORT_ID,
+  DEPENDENCY_MAP_REPORT_ID,
+  TOPOLOGY_MAP_REPORT_ID,
+  ROUTING_DEVICES_REPORT_ID,
+  SWITCH_PORTS_REPORT_ID,
+  CONNECTED_DEVICES_TO_MAC_REPORT_ID,
+  VLAN_REPORT_ID,
+  DEVICE_VLAN_PORT_ASSIGNMENT_REPORT_ID,
+  DEVICE_MAC_FORWARDING_REPORT_ID,
+  DEVICE_CDP_REPORT_ID,
+  DEVICE_LLDP_REPORT_ID,
+  DEVICE_DIAGNOSTICS_REPORT_ID,
+  DISCOVERY_JOBS_REPORT_ID,
+  DISCOVERY_JOBS_CYCLE_LOGS_REPORT_ID,
+  DEVICE_TROUBLESHOOTING_REPORT_ID,
+  TROUBLESHOOTING_DEVICE_DIAGNOSTICS_REPORT_ID,
+  USER_REPORT_ID,
+  LOGGED_ON_USER_REPORT_ID,
+  LAST_LOGGED_ON_USER_REPORT_ID,
+  USER_ACCOUNT_REPORT_ID,
+  DISCOVERY_LOGIN_CREDENTIAL_REPORT_ID,
+  DISCOVERY_SSH_LOGIN_CREDENTIAL_REPORT_ID,
+  DIRECTORY_MEMBER_REPORT_ID,
+  GLOBAL_USER_REPORT_ID,
+  GLOBAL_CLOUD_USER_REPORT_ID,
+  LOGGED_ON_USER_DEVICE_REPORT_ID,
+  LAST_LOGGED_ON_USER_DEVICE_REPORT_ID,
+  USERS_IN_USERGROUP_REPORT_ID,
+  OFFICE365_SUBSCRIBERS_FOR_SUBSCRIPTION_REPORT_ID,
+  USERGROUP_FOR_USER_REPORT_ID,
+  GLOBAL_USERGROUP_REPORT_ID,
+  USERGROUP_USERGROUP_REPORT_ID,
+  USER_GROUP_BROWSER_REPORT_ID,
+  DOCUMENT_ASSIGNMENT_REPORT_ID,
+  DEVICE_HISTORY_SNAPSHOTS_ID,
+  DEVICE_HISTORY_REPORT_ID,
+  DEVICE_HISTORY_OVERVIEW_REPORT_ID,
+  TROUBLESHOOTING_OVERVIEW_ID,
+  WBEM_OBJECT_REPORT_ID,
+  WLAN_REPORT_ID,
+  WLAN_RECEIVING_DEVICES_REPORT_ID,
+  WLAN_CONNECTED_DEVICES_REPORT_ID,
+  DEVICE_WLAN_REPORT_ID,
+  DEVICE_WLAN_ACCESS_POINT_REPORT_ID,
+  WLAN_ACCESS_POINT_REPORT_ID,
+  SCHEDULED_REPORT_EXPORT_JOB_ID,
+  SCHEDULED_MAIL_REPORT_JOB_ID,
+  QUALISYSTEMS_DEVICE_REPORT_ID,
+  QUALISYSTEMS_DEVICE_IP4INTERFACE_VLAN_ID,
+  QUALISYSTEMS_DEVICE_MODULES_REPORT_ID,
+  QUALISYSTEMS_DEVICE_DELETION_LOG_REPORT_ID,
+  QUALISYSTEMS_TOPOLOGY_REPORT_ID,
+  EXCHANGE_SERVER_REPORT_ID,
+  EXCHANGE_MAILBOX_REPORT_ID,
+  MEASUREMENT_REPORT_ID,
+  DEVICE_MEASUREMENT_RAW_DATA_REPORT_ID,
+  DEVICE_MEASUREMENT_MIN_MAX_AVG_DATA_REPORT_ID,
+  DEVICE_MEASUREMENT_EVENTS_ID,
+  DEVICE_MEASUREMENT_EVENT_LOG_ID,
+  MEASUREMENT_OVERVIEW_REPORT_DESCRIPTION,
+  MEASUREMENT_EVENT_LOG_REPORT_DESCRIPTION,
+  MEASUREMENT_CACHE_REPORT_DESCRIPTION,
+  MEASUREMENT_SNAPSHOT_ID,
+  DEVICE_MEASUREMENT_COUNTER_DATA_REPORT_ID,
+  MEASUREMENT_TEMPLATE_REPORT_DESCRIPTION,
+  MEASUREMENT_CREATE_TEMPLATE_REPORT_DESCRIPTION,
+  MEASUREMENT_EDIT_TEMPLATE_REPORT_DESCRIPTION,
+  MEASUREMENT_DELETE_TEMPLATE_REPORT_DESCRIPTION,
+  MEASUREMENT_SCHEDULER_REPORT_DESCRIPTION,
+  DEVICE_SCHEDULED_TASKS_REPORT_ID,
+  DEVICE_SCHEDULED_TASKS_FLAT_REPORT_LIST_ID,
+  DEVICE_SCHEDULED_TASKS_TABLE_LIST_ID,
+  DEVICE_SCHEDULED_TASKS_TABLE_LIST2_ID,
+  DEVICE_SCHEDULED_TASKS_TRIGGER_LIST_ID,
+  DEVICE_SCHEDULED_TASKS_ACTION_LIST_ID,
+  SUBSCRIPTIONS_REPORT_ID,
+  CLOUD_USER_WITH_AD_USER_REPORT_ID,
+  OFFICE365_SUBSCRIPTION_REPORT_ID,
+  OFFICE365_FOR_TENANT_SUBSCRIPTION_REPORT_ID,
+  DEVICE_SUBSCRIPTION_REPORT_ID,
+  CLOUD_USER_NO_CLOUDTYPE_WITH_AD_USER_REPORT_ID,
+  GLOBAL_CLOUD_USER_NO_CLOUDTYPE_REPORT_ID,
+  OFFICE365_USER_SUBSCRIPTIONS_REPORT_ID,
+  CLOUD_EXPLORER_TREE_REPORT_ID,
+  OFFICE365_USER_SUBSCRIPTIONS_FOR_TENANT_REPORT_ID,
+  AZURE_VIRTUAL_MACHINE_REPORT_ID,
+  HETZNER_VIRTUAL_MACHINE_REPORT_ID,
+  AZURE_INTUNE_DEVICES_REPORT_ID,
+  AWS_VIRTUAL_MACHINE_REPORT_ID,
+  AWS_UNASSIGNED_VIRTUAL_MACHINE_REPORT_ID,
+  SHI_VMWARE_DESCRIPTION
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.connection.TcpConnectionState
+"""The TCP connection state."""
+enum TcpConnectionState {
+  closed,
+  listen,
+  synSent,
+  synReceived,
+  established,
+  finWait1,
+  finWait2,
+  closeWait,
+  lastAck,
+  closing,
+  timeWait,
+  deleteTCB,
+  bound,
+  idle,
+  deleteTcb,
+  unknown
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.constants.AddOnProduct
+"""The available Add-On products"""
+enum AddOnProduct {
+  WEB_SERVICE_ADD_ON,
+  DEPENDENCY_MAPPING,
+  NETWORKING,
+  HISTORY,
+  SECURITY,
+  SHI,
+  MEASUREMENT,
+  WEBUI
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.events.EventSeverity
+enum EventSeverity {
+  Info,
+  Major,
+  Critical
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.ProductEdition
+"""The product edition (should be professional or starter). The other ones are deprecated. """
+enum ProductEdition {
+  small,
+  medium,
+  enterprise,
+  essential,
+  professional,
+  starter
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.LicenseType
+enum LicenseType {
+  Evaluation,
+  Standalone,
+  Network,
+  MultiSeatStandalone,
+  Retail,
+  MAK,
+  KMS,
+  Grace,
+  Subscription,
+  OEM,
+  Volume,
+  OpenSource,
+  PublicDomain,
+  KMS_B,
+  KMS_C,
+  MAK_B,
+  OEM_SLP,
+  OEM_NSLP,
+  Licensed,
+  UNWARRANTED,
+  NOT_REGISTERED,
+  DEVELOPER,
+  RESTRICTED,
+  TRIAL,
+  CPU_OPTION,
+  UNLICENSED,
+  AUTHORIZED,
+  AUTHORIZED_SINGLE_INSTALL,
+  TERABYTE,
+  USER,
+  MANAGED,
+  SERVER,
+  FIXED,
+  MSSQL_ENTERPRISE,
+  MSSQL_STANDARD,
+  MSSQL_WEB,
+  MSSQL_DEVELOPER,
+  MSSQL_EXPRESS,
+  PER_USER,
+  PER_DEVICE
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.ApplicationSource
+"""A device's type"""
+enum ApplicationSource {
+  AddRemovePrograms,
+  App,
+  RPM,
+  DPKG,
+  SWLIST,
+  LSPP,
+  PKGINFO,
+  WindowsComponent,
+  SystemComponent
+}
+
+
+# Java enumeration mapping for com.jdisc.webui.server.graphql.api.mutations.login.LoginResultStatus
+"""The result when logging in"""
+enum LoginResultStatus {
+  SUCCESS,
+  BAD_USERNAME_OR_PASSWORD,
+  BAD_REFRESH_TOKEN
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.InterfaceStatus
+"""The network interface status."""
+enum InterfaceStatus {
+  Up,
+  Down,
+  Testing,
+  Unknown,
+  Dormant,
+  NotPresent,
+  LowerLayerDown,
+  NonOperational,
+  Unreachable,
+  Disconnected,
+  Connecting,
+  Connected,
+  Operational,
+  Initialize,
+  Backup,
+  Bypassed,
+  Diagnostics,
+  Failure
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.DuplexMode
+"""The network interface duplex mode."""
+enum DuplexMode {
+  Unknown,
+  AutoNegotiation,
+  HalfDuplex,
+  FullDuplex
+}
+
+
+# Java enumeration mapping for com.jdisc.webui.client.common.threading.SessionState
+"""The status of the backend and/or frontend session"""
+enum SessionState {
+  UNKNOWN,
+  LIVE,
+  RETRY,
+  DEAD
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.windows.disk.DiskEncryptionAlgorithm
+"""The logical disk encryption algorithm."""
+enum DiskEncryptionAlgorithm {
+  NONE,
+  AES_128_WITH_DIFFUSER,
+  AES_256_WITH_DIFFUSER,
+  AES_128,
+  AES_256,
+  HARDWARE_ENCRYPTION,
+  XTS_AES_128,
+  XTS_AES_256
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.MemoryType
+"""The memory module type"""
+enum MemoryType {
+  RAM,
+  ROM
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.InterfaceType
+"""The network interface type."""
+enum InterfaceType {
+  unknown,
+  other,
+  regular1822,
+  hdh1822,
+  ddnX25,
+  rfc877x25,
+  ethernetCsmacd,
+  iso88023Csmacd,
+  iso88024TokenBus,
+  iso88025TokenRing,
+  iso88026Man,
+  starLan,
+  proteon10Mbit,
+  proteon80Mbit,
+  hyperchannel,
+  fddi,
+  lapb,
+  sdlc,
+  ds1,
+  e1,
+  basicISDN,
+  primaryISDN,
+  propPointToPointSerial,
+  ppp,
+  softwareLoopback,
+  eon,
+  ethernet3Mbit,
+  nsip,
+  slip,
+  ultra,
+  ds3,
+  sip,
+  frameRelay,
+  rs232,
+  para,
+  arcnet,
+  arcnetPlus,
+  atm,
+  miox25,
+  sonet,
+  x25ple,
+  iso88022llc,
+  localTalk,
+  smdsDxi,
+  frameRelayService,
+  v35,
+  hssi,
+  hippi,
+  modem,
+  aal5,
+  sonetPath,
+  sonetVT,
+  smdsIcip,
+  propVirtual,
+  propMultiplexor,
+  ieee80212,
+  fibreChannel,
+  hippiInterface,
+  frameRelayInterconnect,
+  aflane8023,
+  aflane8025,
+  cctEmul,
+  fastEther,
+  isdn,
+  v11,
+  v36,
+  g703at64k,
+  g703at2mb,
+  qllc,
+  fastEtherFX,
+  channel,
+  ieee80211,
+  ibm370parChan,
+  escon,
+  dlsw,
+  isdns,
+  isdnu,
+  lapd,
+  ipSwitch,
+  rsrb,
+  atmLogical,
+  ds0,
+  ds0Bundle,
+  bsc,
+  async,
+  cnr,
+  iso88025Dtr,
+  eplrs,
+  arap,
+  propCnls,
+  hostPad,
+  termPad,
+  frameRelayMPI,
+  x213,
+  adsl,
+  radsl,
+  sdsl,
+  vdsl,
+  iso88025CRFPInt,
+  myrinet,
+  voiceEM,
+  voiceFXO,
+  voiceFXS,
+  voiceEncap,
+  voiceOverIp,
+  atmDxi,
+  atmFuni,
+  atmIma,
+  pppMultilinkBundle,
+  ipOverCdlc,
+  ipOverClaw,
+  stackToStack,
+  virtualIpAddress,
+  mpc,
+  ipOverAtm,
+  iso88025Fiber,
+  tdlc,
+  gigabitEthernet,
+  hdlc,
+  lapf,
+  v37,
+  x25mlp,
+  x25huntGroup,
+  trasnpHdlc,
+  interleave,
+  fast,
+  ip,
+  docsCableMaclayer,
+  docsCableDownstream,
+  docsCableUpstream,
+  a12MppSwitch,
+  tunnel,
+  coffee,
+  ces,
+  atmSubInterface,
+  l2vlan,
+  l3ipvlan,
+  l3ipxvlan,
+  digitalPowerline,
+  mediaMailOverIp,
+  dtm,
+  dcn,
+  ipForward,
+  msdsl,
+  ieee1394,
+  ifgsn,
+  dvbRccMacLayer,
+  dvbRccDownstream,
+  dvbRccUpstream,
+  atmVirtual,
+  mplsTunnel,
+  srp,
+  voiceOverAtm,
+  voiceOverFrameRelay,
+  idsl,
+  compositeLink,
+  ss7SigLink,
+  propWirelessP2P,
+  frForward,
+  rfc1483,
+  usb,
+  ieee8023adLag,
+  bgppolicyaccounting,
+  frf16MfrBundle,
+  h323Gatekeeper,
+  h323Proxy,
+  mpls,
+  mfSigLink,
+  hdsl2,
+  shdsl,
+  ds1FDL,
+  pos,
+  dvbAsiIn,
+  dvbAsiOut,
+  plc,
+  nfas,
+  tr008,
+  gr303RDT,
+  gr303IDT,
+  isup,
+  propDocsWirelessMaclayer,
+  propDocsWirelessDownstream,
+  propDocsWirelessUpstream,
+  hiperlan2,
+  propBWAp2Mp,
+  sonetOverheadChannel,
+  digitalWrapperOverheadChannel,
+  aal2,
+  radioMAC,
+  atmRadio,
+  imt,
+  mvl,
+  reachDSL,
+  frDlciEndPt,
+  atmVciEndPt,
+  opticalChannel,
+  opticalTransport,
+  propAtm,
+  voiceOverCable,
+  infiniband,
+  teLink,
+  q2931,
+  virtualTg,
+  sipTg,
+  sipSig,
+  docsCableUpstreamChannel,
+  econet,
+  pon155,
+  pon622,
+  bridge,
+  linegroup,
+  voiceEMFGD,
+  voiceFGDEANA,
+  voiceDID,
+  mpegTransport,
+  sixToFour,
+  gtp,
+  pdnEtherLoop1,
+  pdnEtherLoop2,
+  opticalChannelGroup,
+  homepna,
+  gfp,
+  ciscoISLvlan,
+  actelisMetaLOOP,
+  fcipLink,
+  rpr,
+  qam,
+  lmp,
+  cblVectaStar,
+  docsCableMCmtsDownstream,
+  adsl2,
+  macSecControlledIF,
+  macSecUncontrolledIF,
+  aviciOpticalEther,
+  atmbond,
+  voiceFGDOS,
+  mocaVersion1,
+  ieee80216WMAN,
+  adsl2plus,
+  dvbRcsMacLayer,
+  dvbTdm,
+  dvbRcsTdma,
+  vrrpVirtualInterface,
+  zoneVirtualInterface
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.certificates.PublicKeyEncryptionType
+"""The certificate type"""
+enum PublicKeyEncryptionType {
+  RSA,
+  MD2WithRSA,
+  MD4WithRSA,
+  MD5WithRSA,
+  SHA1WithRSA,
+  RSAOAEP,
+  RSAESOAEP,
+  RSAMGF1,
+  RSASZOID,
+  RRSASSA_PSS,
+  RSA_SHA256,
+  RSA_SHA384,
+  RSA_SHA512,
+  RSA_SHA224,
+  X9,
+  SHA1ECDSA,
+  SHA256ECDSA,
+  SHA384ECDSA,
+  SHA512ECDSA
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.DirectoryType
+"""The directory item type."""
+enum DirectoryType {
+  Container,
+  OrganizationalUnit,
+  DNSDomain
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.DiskStatus
+"""The physical disk represents a disk attached to a disk slot."""
+enum DiskStatus {
+  Active,
+  HotSpare,
+  Unassigned,
+  Failed,
+  Spare,
+  Unknown,
+  Inactive,
+  Altsig,
+  TooSmall,
+  HistoryOfFailures,
+  UnsupportedVersion,
+  Degraded,
+  Creating,
+  Deleted,
+  Deleting,
+  Initialized,
+  Damaged
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.reporting.base.FieldNature
+"""A field's nature"""
+enum FieldNature {
+  NormalField,
+  IdField,
+  InvisibleIdField,
+  KeyField,
+  AliasField
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.devicedata.ConnectionDirection
+"""The direction of the relation. Forward means source initiated, Backward means destination initiated."""
+enum ConnectionDirection {
+  Forward,
+  Backward
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.events.EventType
+enum EventType {
+  DiscoveryStarted,
+  DiscoveryCompleted,
+  DiscoveryStopped,
+  DiscoveryPaused,
+  DiscoveryResumed,
+  BackupStarted,
+  BackupFinished,
+  BackupFailed,
+  CompactStarted,
+  CompactFinished,
+  CompactTableFailed,
+  DeviceHistoryStarted,
+  DeviceHistoryFinished,
+  ReportExportFailed,
+  DeviceDiscoveryFailed,
+  DeviceNotWrittenToDatabase,
+  DeviceFilterFailed,
+  ReportExportStarted,
+  MigrationEvent,
+  DrsMigrationEvent,
+  LiveMigrationEvent,
+  OfflineMigrationEvent,
+  RelocatedEvent,
+  ShiExportEvent,
+  MeasurementInstrumentationStarted,
+  MeasurementInstrumentationFinished,
+  MeasurementDataTransferStarted,
+  MeasurementDataTransferFinished,
+  MeasurementDataImportStarted,
+  MeasurementDataImportFinished
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.LinkLayerNeighborProtocol
+"""The protocol used to create a topology entry"""
+enum LinkLayerNeighborProtocol {
+  Lldp,
+  Cdp,
+  PortForwardingTable,
+  VirtualizationInformation,
+  PortForwardingTopology,
+  Stp,
+  WlanBssid,
+  VirtualSwitchConnection,
+  FibreChannelConnection
+}
+
+
+# Java enumeration mapping for com.jdisc.common.ssh.SshKeyType
+enum SshKeyType {
+  RSA,
+  DSA
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.webui.datastructures.preferences.uiprefs.UITheme
+"""The web user interface theme name."""
+enum UITheme {
+  DARK,
+  LIGHT
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.constants.FieldWidthEnum
+"""Enumeration for field widths in the UI"""
+enum FieldWidthEnum {
+  checkbox,
+  ip4Address,
+  timestamp,
+  verySmall,
+  small,
+  deviceType,
+  medium,
+  large,
+  veryLarge,
+  ip6Address,
+  ip6NetworkPrefix
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.tasks.TaskStatus
+enum TaskStatus {
+  Stopped,
+  Running,
+  Paused,
+  Stopping,
+  Starting,
+  Disabled,
+  Error
+}
+
+
+# Java enumeration mapping for com.jdisc.inventory.common.enums.SoftwareInstanceType
+"""The software instance type"""
+enum SoftwareInstanceType {
+  Database,
+  WebServer,
+  ApplicationServer,
+  JEEApplication,
+  JEEWebApplication,
+  JBossServiceArchive,
+  JAR,
+  DatabaseComponent,
+  DatabaseAnalysis,
+  DatabaseReporting,
+  DatabaseIntegrationServices,
+  MasterDataServices,
+  DataQualityServer
+}
+
+
+# Java enumeration mapping for com.jdisc.webui.server.graphql.api.common.Status
+"""A generic status object"""
+enum Status {
+  Success,
+  GeneralError,
+  CertificateParsingError,
+  CertificatePasswordError,
+  NoMatchingCertificateFound
+}
+
+
+# --------------- Built in Scalars ----------------------------------
+scalar Date
+scalar DateTime
+scalar Object
+scalar JSON
+scalar Long
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.cluster.Cluster'
+"""A cluster object."""
+type Cluster {
+  """The internal id for this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The cluster name."""
+  name: String
+
+  """A cluster's unique id."""
+  uniqueId: String
+
+  """A flag whether all cluster members have been found."""
+  allMembersFound: Boolean
+
+  """The virtual datacenter that a cluster belongs to."""
+  virtualDatacenter: VirtualDatacenter
+
+  """The cluster type"""
+  type: ClusterType
+
+  """The cluster member devices"""
+  clusterMembers: [Device]
+
+  """The associated cluster member virtual machines"""
+  associatedVirtualMachines: [Device]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.cluster.Cluster'
+fragment ClusterFields on Cluster {
+  id
+  name
+  uniqueId
+  allMembersFound
+  virtualDatacenter { ... VirtualDatacenterFields }
+  type
+  clusterMembers { ... DeviceFields }
+  associatedVirtualMachines { ... DeviceFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.config.network.Directory'
+"""A directory object"""
+type Directory {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The directory guid."""
+  guid: String
+
+  """The directory unique id."""
+  uniqueId: String
+
+  """The directory name."""
+  name: String
+
+  """The directory canonical name."""
+  canonicalName: String
+
+  """The number of computer members."""
+  numberOfComputerMembers: Int
+
+  """The directory distinguished name."""
+  distinguishedName: String
+
+  """The directory netbios name."""
+  netBiosName: String
+
+  """The directory type."""
+  type: DirectoryType
+
+  """The last discovery timestamp. This is the timestamp when devices of this directory item has been scanned for the last time."""
+  discoveryTime: DateTime
+
+  """The parent directory."""
+  parentDirectory: Directory
+
+  """The child directories."""
+  children: [Directory]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.config.network.Directory'
+fragment DirectoryFields on Directory {
+  id
+  guid
+  uniqueId
+  name
+  canonicalName
+  numberOfComputerMembers
+  distinguishedName
+  netBiosName
+  type
+  discoveryTime
+  parentDirectory { ... DirectoryFields }
+  children { ... DirectoryFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.config.network.IP4DHCPConfiguration'
+"""The DHCP configuration for an interface"""
+type IP4DHCPConfiguration {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The dhcp servers's IP4 address."""
+  dhcpServerIP4Address: String
+
+  """The IP4 transport object of the DHCP server (if the DHCP server has been scanned)."""
+  dhcpServerIP4Transport: IP4Transport
+
+  """The time when the DHCP lease was obtained."""
+  leaseObtained: DateTime
+
+  """The time when the DHCP lease will expire."""
+  leaseExpires: DateTime
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.config.network.IP4DHCPConfiguration'
+fragment IP4DHCPConfigurationFields on IP4DHCPConfiguration {
+  id
+  dhcpServerIP4Address
+  dhcpServerIP4Transport { ... IP4TransportFields }
+  leaseObtained
+  leaseExpires
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.config.network.IP4Network'
+"""An IP4 network object holding the IP base address, subnet mask and the name"""
+type IP4Network {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """A flag that indicates whether the network's name has been configured manually or whether it has been discovered (e.g. via AD)."""
+  nameManuallyConfigured: Boolean
+
+  """The network base address."""
+  networkBaseAddress: String
+
+  """A network's name."""
+  name: String
+
+  """The network subnet mask."""
+  subnetMask: String
+
+  """A network's first IP address."""
+  firstAddress: String
+
+  """A network's last IP4 address."""
+  lastAddress: String
+
+  """A network's parent network (if it exists)."""
+  parentNetwork: IP4Network
+
+  """The list of IP4 transports associated with this network."""
+  transports: [IP4Transport]
+
+  """The list of devices belonging to this nework."""
+  devices: [Device]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.config.network.IP4Network'
+fragment IP4NetworkFields on IP4Network {
+  id
+  nameManuallyConfigured
+  networkBaseAddress
+  name
+  subnetMask
+  firstAddress
+  lastAddress
+  parentNetwork { ... IP4NetworkFields }
+  transports { ... IP4TransportFields }
+  devices { ... DeviceFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.config.network.IP4Transport'
+"""An IP4 transport holding the IP address, subnet mask and hostnames"""
+type IP4Transport {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The transport's IP4 address."""
+  ipAddress: String
+
+  """The transport's configured IP4 subnet mask."""
+  subnetMask: String
+
+  """A flag that indicates whether this transport is routing or not."""
+  isRouting: Boolean
+
+  """A flag that indicates whether this is the device's main IP address."""
+  isMainAddress: Boolean
+
+  """The transport hostnames."""
+  hostnames: [String]
+
+  """The assigned network for a transport."""
+  network: IP4Network
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.config.network.IP4Transport'
+fragment IP4TransportFields on IP4Transport {
+  id
+  ipAddress
+  subnetMask
+  isRouting
+  isMainAddress
+  hostnames
+  network { ... IP4NetworkFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.config.network.IP6Network'
+"""An IP6 network holding the IP address base address, prefix length and network name"""
+type IP6Network {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """An IP6 network's base address."""
+  networkBaseAddress: String
+
+  """An IP6 network's configured prefix length."""
+  prefixLength: Int
+
+  """A flag that indicates whether the network's name has been configured manually or whether it has been discovered (e.g. via AD)."""
+  nameManuallyConfigured: Boolean
+
+  """A network's name."""
+  name: String
+
+  """A network's first IP address."""
+  firstAddress: String
+
+  """A network's last IP address."""
+  lastAddress: String
+
+  """A network's parent network (if it exists)."""
+  parentNetwork: IP6Network
+
+  """The list of IP6 transports associated with this network."""
+  transports: [IP6Transport]
+
+  """The list of devices belonging to this nework."""
+  devices: [Device]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.config.network.IP6Network'
+fragment IP6NetworkFields on IP6Network {
+  id
+  networkBaseAddress
+  prefixLength
+  nameManuallyConfigured
+  name
+  firstAddress
+  lastAddress
+  parentNetwork { ... IP6NetworkFields }
+  transports { ... IP6TransportFields }
+  devices { ... DeviceFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.config.network.IP6Transport'
+"""An IP6 transport holding the IP address, prefix length and hostnames"""
+type IP6Transport {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The transport's IP6 address."""
+  ipAddress: String
+
+  """The transport's configured prefix length."""
+  configuredPrefixLength: Int
+
+  """A flag that indicates whether this transport is routing or not."""
+  isRouting: Boolean
+
+  """A flag that indicates whether this is the device's main IP address."""
+  isMainAddress: Boolean
+
+  """The transport hostnames."""
+  hostnames: [String]
+
+  """The assigned network for a transport."""
+  network: IP6Network
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.config.network.IP6Transport'
+fragment IP6TransportFields on IP6Transport {
+  id
+  ipAddress
+  configuredPrefixLength
+  isRouting
+  isMainAddress
+  hostnames
+  network { ... IP6NetworkFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.config.network.IPDnsServerConfiguration'
+"""The DNS server configuration for an interface"""
+type IPDnsServerConfiguration {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The DNS server IP6 address."""
+  dnsServerIP6Address: String
+
+  """The assigned IP6 transport for the DNS server."""
+  dnsServerIP6Transport: IP6Transport
+
+  """The location in the DNS server search order."""
+  position: Int
+
+  """The assigned IP4 transport for the DNS server."""
+  dnsServerIP4Transport: IP6Transport
+
+  """The DNS server IP4 address."""
+  dnsServerIP4Address: String
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.config.network.IPDnsServerConfiguration'
+fragment IPDnsServerConfigurationFields on IPDnsServerConfiguration {
+  id
+  dnsServerIP6Address
+  dnsServerIP6Transport { ... IP6TransportFields }
+  position
+  dnsServerIP4Transport { ... IP6TransportFields }
+  dnsServerIP4Address
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.config.network.NetworkNeighborhood'
+"""The network neighborhood (Windows domain)"""
+type NetworkNeighborhood {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The network neighborhood/domain name."""
+  name: String
+
+  """The last discovery timestamp. This is the timestamp when the domain has been browsed for the last time."""
+  discoveryTime: DateTime
+
+  """The license for a BIOS"""
+  directory: Directory
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.config.network.NetworkNeighborhood'
+fragment NetworkNeighborhoodFields on NetworkNeighborhood {
+  id
+  name
+  discoveryTime
+  directory { ... DirectoryFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.config.network.TopologyConnection'
+"""A relation between two devices. The kind of relation is defined by the relation type."""
+type TopologyConnection {
+  """The timestamp when this connection was seen the last time"""
+  lastSeenTimestamp: DateTime
+
+  """The second network interface for the topology"""
+  networkInterface2: NetworkInterface
+
+  """The first network interface for the topology"""
+  networkInterface1: NetworkInterface
+
+  """The protocol which has been used to determine this connection"""
+  protocol: LinkLayerNeighborProtocol
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.config.network.TopologyConnection'
+fragment TopologyConnectionFields on TopologyConnection {
+  lastSeenTimestamp
+  networkInterface2 { ... NetworkInterfaceFields }
+  networkInterface1 { ... NetworkInterfaceFields }
+  protocol
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.Device'
+"""The device object specifies a single physical or virtual device together with all its properties."""
+type Device {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The last discovery timestamp. This is the timestamp of the current data."""
+  discoveryTime: DateTime
+
+  """The last seen timestamp. This timestamp defines when the device has been seen the last time directly or indirectly (e.g. via a VMware VCenter installation)."""
+  lastSeenTime: DateTime
+
+  """The time when the device was scanned for the first time."""
+  creationTime: DateTime
+
+  """The time when the support entitlements have been read for the last time"""
+  lastSupportEntitlementTime: DateTime
+
+  """A logical serial number is used by some vendors in order to inject a logical serial number into the BIOS and overwrite
+the device's physical serial number. This approach is used by some devices to work around licenses that are tied to
+the device's serial number."""
+  logicalSerialNumber: String
+
+  """A device's serial number"""
+  serialNumber: String
+
+  """The duration in milliseconds that were required to discover this device"""
+  discoveryDuration: Long
+
+  """The duration in milliseconds that were required to write this device's data to the database"""
+  databaseDuration: Long
+
+  """A device's manufacturer"""
+  manufacturer: String
+
+  """A device's name"""
+  name: String
+
+  """The manufacturing timestamp"""
+  manufacturingTime: DateTime
+
+  """A device's model"""
+  model: String
+
+  """A device's type"""
+  type: DeviceType
+
+  """A device's asset tag"""
+  assetTag: String
+
+  """A device's part number"""
+  partNumber: String
+
+  """A device's hardware version"""
+  hwVersion: String
+
+  """A device's NetBIOS computername"""
+  computername: String
+
+  """A device's unqiue id (if it exists)"""
+  uniqueId: String
+
+  """The total RAM for this device in MB"""
+  totalRAM: Long
+
+  """The list of module slots with their modules (if populated)."""
+  moduleSlots: [ModuleSlot]
+
+  """The list of memory module slots with their memory modules (if populated)."""
+  memoryModuleSlots: [MemoryModuleSlot]
+
+  """The list of processor slots with their processors (if populated)."""
+  processorSlots: [ProcessorSlot]
+
+  """The list of physical disk slots."""
+  diskSlots: [PhysicalDiskSlot]
+
+  """The list of disk partitions."""
+  diskPartitions: [DiskPartition]
+
+  """The list of logical disks."""
+  logicalDisks: [LogicalDisk]
+
+  """The list of network interfaces."""
+  networkInterfaces: [NetworkInterface]
+
+  """The list of video controller slots."""
+  videoControllerSlots: [VideoControllerSlot]
+
+  """The list of TCP/IP ports that are in listen mode."""
+  listeningPorts: [PortConnection]
+
+  """The TPM module for this device."""
+  tpmModule: TpmModule
+
+  """The system board."""
+  systemBoard: SystemBoard
+
+  """The list of TCP/IP connections where the current device is the target of a TCP/IP connection."""
+  targetTcpIpPortConnections: [PortConnection]
+
+  """The list of TCP/IP connections where the current device is initiating a TCP/IP connection."""
+  sourceTcpIpPortConnections: [PortConnection]
+
+  """The clusters which this device belongs to"""
+  clusters: [Device]
+
+  """The virtual datacenters that a device belongs to."""
+  virtualDatacenters: [VirtualDatacenter]
+
+  """The virtual datacenters that are managed by this device (e.g. by a VCenter installation running on this device)."""
+  managedVirtualDatacenters: [VirtualDatacenter]
+
+  """The SNMP agent data."""
+  snmpAgentData: SnmpAgentData
+
+  """A device's operating system"""
+  operatingSystem: OperatingSystem
+
+  """A device's BIOS"""
+  bios: Bios
+
+  """The network neighborhood/domain that this device belongs to."""
+  networkNeighborhood: NetworkNeighborhood
+
+  """The directory item that this device belongs to."""
+  directory: Directory
+
+  """Returns the list of hosted virtual machines on this device."""
+  hostedVirtualMachines: [DeviceRelation]
+
+  """Returns the list of managed virtualization servers.
+For instance the list of managed ESX servers managed by a VCenter server."""
+  managedVirtualizationServers: [DeviceRelation]
+
+  """Returns the list of stack members for a stacked switch.
+A stacked switch is a virtual switch being created when stacking multiple physical switches together."""
+  stackedSwitchMembers: [DeviceRelation]
+
+  """Returns the list of attached devices.
+Attached devices are usually monitors attached to a PC/laptop, local printers attached to a device etc.."""
+  attachedDevices: [DeviceRelation]
+
+  """The list of related devices where this device is the relation's target."""
+  targetRelatedDevices: [DeviceRelation]
+
+  """The list of related devices where this device is the relation's target with a specific connector type."""
+  targetRelatedDevicesByConnectorType(type: ConnectorType): [DeviceRelation]
+
+  """The list of related devices where this device is the relation's source with one of the specified connector types."""
+  sourceRelatedDevicesByConnectorTypes(types: [ConnectorType]): [DeviceRelation]
+
+  """The list of related devices where this device is the relation's target with one of the specified connector types."""
+  targetRelatedDevicesByConnectorTypes(types: [ConnectorType]): [DeviceRelation]
+
+  """The list of related devices where this device is the relation's source."""
+  sourceRelatedDevices: [DeviceRelation]
+
+  """The list of TCP/IP ports and TCP/IP connections where the current device is either the source of the destination of a TCP/IP connection."""
+  tcpIpConnections: [PortConnection]
+
+  """The list of related devices where this device is the relation's source with a specific connector type."""
+  sourceRelatedDevicesByConnectorType(type: ConnectorType): [DeviceRelation]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.Device'
+fragment DeviceFields on Device {
+  id
+  discoveryTime
+  lastSeenTime
+  creationTime
+  lastSupportEntitlementTime
+  logicalSerialNumber
+  serialNumber
+  discoveryDuration
+  databaseDuration
+  manufacturer
+  name
+  manufacturingTime
+  model
+  type
+  assetTag
+  partNumber
+  hwVersion
+  computername
+  uniqueId
+  totalRAM
+  moduleSlots { ... ModuleSlotFields }
+  memoryModuleSlots { ... MemoryModuleSlotFields }
+  processorSlots { ... ProcessorSlotFields }
+  diskSlots { ... PhysicalDiskSlotFields }
+  diskPartitions { ... DiskPartitionFields }
+  logicalDisks { ... LogicalDiskFields }
+  networkInterfaces { ... NetworkInterfaceFields }
+  videoControllerSlots { ... VideoControllerSlotFields }
+  listeningPorts { ... PortConnectionFields }
+  tpmModule { ... TpmModuleFields }
+  systemBoard { ... SystemBoardFields }
+  targetTcpIpPortConnections { ... PortConnectionFields }
+  sourceTcpIpPortConnections { ... PortConnectionFields }
+  clusters { ... DeviceFields }
+  virtualDatacenters { ... VirtualDatacenterFields }
+  managedVirtualDatacenters { ... VirtualDatacenterFields }
+  snmpAgentData { ... SnmpAgentDataFields }
+  operatingSystem { ... OperatingSystemFields }
+  bios { ... BiosFields }
+  networkNeighborhood { ... NetworkNeighborhoodFields }
+  directory { ... DirectoryFields }
+  hostedVirtualMachines { ... DeviceRelationFields }
+  managedVirtualizationServers { ... DeviceRelationFields }
+  stackedSwitchMembers { ... DeviceRelationFields }
+  attachedDevices { ... DeviceRelationFields }
+  targetRelatedDevices { ... DeviceRelationFields }
+  targetRelatedDevicesByConnectorType(type: ConnectorType) { ... DeviceRelationFields }
+  sourceRelatedDevicesByConnectorTypes(types: [ConnectorType]) { ... DeviceRelationFields }
+  targetRelatedDevicesByConnectorTypes(types: [ConnectorType]) { ... DeviceRelationFields }
+  sourceRelatedDevices { ... DeviceRelationFields }
+  tcpIpConnections { ... PortConnectionFields }
+  sourceRelatedDevicesByConnectorType(type: ConnectorType) { ... DeviceRelationFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.discovery.DiscoveryCycle'
+"""A job (discovery) object."""
+type DiscoveryCycle {
+  """The internal id for this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The description for the job."""
+  description: String
+
+  """The name for the job."""
+  name: String
+
+  """The status of the job."""
+  status: TaskStatus
+
+  """The last timestamp the job was started."""
+  lastStartAt: DateTime
+
+  """The last timestamp the job was finished."""
+  lastFinishedAt: DateTime
+
+  """Sync directories even on networks."""
+  directorySyncNetworks: Boolean
+
+  """Sync directories trees."""
+  directorySyncDiretoryTree: Boolean
+
+  """Sync users."""
+  directorySyncUsers: Boolean
+
+  """Sync user groups."""
+  directorySyncUserGroups: Boolean
+
+  """Sync computer accounts."""
+  directorySyncComputerAccounts: Boolean
+
+  """Sync cloud services."""
+  syncCloudServices: Boolean
+
+  """Sync directories trees."""
+  agingoutCompleted: Boolean
+
+  """Minimum time between two discovery jobs."""
+  donotDiscoverTwiceWithinnSeconds: Int
+
+  """Maximum number of devices parallel discovered."""
+  maxConcurrentDevices: Int
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.discovery.DiscoveryCycle'
+fragment DiscoveryCycleFields on DiscoveryCycle {
+  id
+  description
+  name
+  status
+  lastStartAt
+  lastFinishedAt
+  directorySyncNetworks
+  directorySyncDiretoryTree
+  directorySyncUsers
+  directorySyncUserGroups
+  directorySyncComputerAccounts
+  syncCloudServices
+  agingoutCompleted
+  donotDiscoverTwiceWithinnSeconds
+  maxConcurrentDevices
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.event.Event'
+"""A event object."""
+type Event {
+  """The internal id for this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The description for the event."""
+  description: String
+
+  """The severity of the event."""
+  severity: EventSeverity
+
+  """The type of the event."""
+  type: EventType
+
+  """The type of the event."""
+  application: String
+
+  """The type of the event."""
+  subject: String
+
+  """The job that an event belongs to."""
+  discoveryCycle: DiscoveryCycle
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.event.Event'
+fragment EventFields on Event {
+  id
+  description
+  severity
+  type
+  application
+  subject
+  discoveryCycle { ... DiscoveryCycleFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.firmware.Bios'
+"""BIOS information"""
+type Bios {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The BIOS name"""
+  name: String
+
+  """The BIOS version"""
+  version: String
+
+  """The BIOS manufacturer"""
+  manufacturer: String
+
+  """The SMBIOS major version"""
+  smbiosMajor: Int
+
+  """The SMBIOS minor version"""
+  smbiosMinor: Int
+
+  """The BIOS unique id"""
+  uniqueId: String
+
+  """The BIOS release date."""
+  releaseDate: DateTime
+
+  """The license for a BIOS"""
+  license: License
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.firmware.Bios'
+fragment BiosFields on Bios {
+  id
+  name
+  version
+  manufacturer
+  smbiosMajor
+  smbiosMinor
+  uniqueId
+  releaseDate
+  license { ... LicenseFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.DeviceRelation'
+"""A relation between two devices. The kind of relation is defined by the relation type."""
+type DeviceRelation {
+  """The source device for the relation"""
+  sourceDevice: Device
+
+  """The connector internal id. The internal id depends on the relation type.
+For VMware virtual machine relations, the type can be the VM UUID (unique id)."""
+  internalId: String
+
+  """The direction of the relation. Forward means source initiated, Backward means destination initiated."""
+  direction: ConnectionDirection
+
+  """A display name for the relation (if any)"""
+  displayName: String
+
+  """The relation type for relations between two devices"""
+  relationType: ConnectorType
+
+  """The target device for the relation"""
+  targetDevice: Device
+
+  """The state for a relation between two devices. This state is used
+for instance for virtualation relations between the physical host and the VM
+in order to indicate the virtual machine state"""
+  state: ConnectorState
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.DeviceRelation'
+fragment DeviceRelationFields on DeviceRelation {
+  sourceDevice { ... DeviceFields }
+  internalId
+  direction
+  displayName
+  relationType
+  targetDevice { ... DeviceFields }
+  state
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.DiskPartition'
+"""A partition on a physical disk."""
+type DiskPartition {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The parition name."""
+  name: String
+
+  """The parition type."""
+  type: DiskPartitionType
+
+  """The parition type as a string as reported by the device"""
+  typeString: String
+
+  """The disk parition size in KB."""
+  size: Long
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.DiskPartition'
+fragment DiskPartitionFields on DiskPartition {
+  id
+  name
+  type
+  typeString
+  size
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.LogicalDisk'
+"""A logical disk drive."""
+type LogicalDisk {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The logical disk name."""
+  name: String
+
+  """The logical disk filesystem type."""
+  fileSystem: String
+
+  """The logical disk mount point."""
+  mountPoint: String
+
+  """The logical disk location. The location might be in a remote disk array."""
+  location: String
+
+  """The logical disk encryption method."""
+  encryptionMethod: DiskEncryptionMethod
+
+  """The logical disk encryption algorithm."""
+  encryptionAlgorithm: DiskEncryptionAlgorithm
+
+  """The used space on this logical disk in KB."""
+  usedSpace: Long
+
+  """The free space on this logical disk in KB."""
+  freeSpace: Long
+
+  """A logical disk's total size in KB."""
+  totalSize: Long
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.LogicalDisk'
+fragment LogicalDiskFields on LogicalDisk {
+  id
+  name
+  fileSystem
+  mountPoint
+  location
+  encryptionMethod
+  encryptionAlgorithm
+  usedSpace
+  freeSpace
+  totalSize
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.MappedPrinter'
+"""A mapped printer mapped by the operating system."""
+type MappedPrinter {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The printer device."""
+  printerDevice: Device
+
+  """The operating system."""
+  operatingSystem: OperatingSystem
+
+  """The printer port name."""
+  portName: String
+
+  """The printer name."""
+  name: String
+
+  """The printer's IP6 address."""
+  ip6Address: String
+
+  """The printer's IP4 address."""
+  ip4Address: String
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.MappedPrinter'
+fragment MappedPrinterFields on MappedPrinter {
+  id
+  printerDevice { ... DeviceFields }
+  operatingSystem { ... OperatingSystemFields }
+  portName
+  name
+  ip6Address
+  ip4Address
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.MemoryModule'
+"""The memory module represents a memory module within a memory module slot on the mainboard."""
+type MemoryModule {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The memory module model."""
+  model: String
+
+  """The memory module manufacturer."""
+  manufacturer: String
+
+  """The memory module serial number."""
+  serialNumber: String
+
+  """The memory module size in MB."""
+  size: Long
+
+  """The memory module speed in Hz."""
+  speed: Long
+
+  """The memory module's type"""
+  memoryType: MemoryType
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.MemoryModule'
+fragment MemoryModuleFields on MemoryModule {
+  id
+  model
+  manufacturer
+  serialNumber
+  size
+  speed
+  memoryType
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.MemoryModuleSlot'
+"""The memory module slot represents a slot for a memory module on the mainboard."""
+type MemoryModuleSlot {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The memory module slot id."""
+  slotId: String
+
+  """The memory module socket designation"""
+  socketDesignation: String
+
+  """The memoryModule assigned to this slot"""
+  memoryModule: MemoryModule
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.MemoryModuleSlot'
+fragment MemoryModuleSlotFields on MemoryModuleSlot {
+  id
+  slotId
+  socketDesignation
+  memoryModule { ... MemoryModuleFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.Module'
+"""The module represents a module within a device."""
+type Module {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The module model."""
+  model: String
+
+  """The module description."""
+  description: String
+
+  """The module manufacturer."""
+  manufacturer: String
+
+  """The  module serial number."""
+  serialNumber: String
+
+  """The module os version."""
+  osVersion: String
+
+  """The module hardware version."""
+  hwVersion: String
+
+  """The module firmware version."""
+  fwVersion: String
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.Module'
+fragment ModuleFields on Module {
+  id
+  model
+  description
+  manufacturer
+  serialNumber
+  osVersion
+  hwVersion
+  fwVersion
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.ModuleSlot'
+"""The module slot represents a slot for a module in a device."""
+type ModuleSlot {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The module slot id."""
+  slotId: String
+
+  """The module socket designation"""
+  socketDesignation: String
+
+  """The module assigned to this slot"""
+  module: Module
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.ModuleSlot'
+fragment ModuleSlotFields on ModuleSlot {
+  id
+  slotId
+  socketDesignation
+  module { ... ModuleFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.network.NetworkInterface'
+"""A network interface"""
+type NetworkInterface {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The network interface's physical address (MAC or WWN)."""
+  index: String
+
+  """The network interface's port id."""
+  portId: String
+
+  """The network interface's physical address (MAC or WWN)."""
+  physicalAddress: String
+
+  """The network interface's description."""
+  description: String
+
+  """The network interface's extended description."""
+  extendedDescription: String
+
+  """The network interface's annotation (often configured manually by the admins)."""
+  annotation: String
+
+  """The network interface's speed in Bits per second."""
+  speed: Long
+
+  """The network interface's MTU configuration."""
+  mtu: Int
+
+  """The network interface's type"""
+  type: InterfaceType
+
+  """The network interface's operational status"""
+  operationalStatus: InterfaceStatus
+
+  """The network interface's administrative status"""
+  administrativeStatus: InterfaceStatus
+
+  """The network interface's duplex mode"""
+  duplexMode: DuplexMode
+
+  """A flag whether this network interface has DHCP enabled or not"""
+  dhcpEnabled: Boolean
+
+  """The DNS suffix configured for this network interface"""
+  dnsSuffix: String
+
+  """The owning device"""
+  device: Device
+
+  """The list of ip4 transports including their configuration (subnet mask, hostnames)."""
+  ip4Transports: [IP4Transport]
+
+  """The list of ip6 transports including their configuration (network prefix, hostnames)."""
+  ip6Transports: [IP6Transport]
+
+  """The DHCP configuration (if it exists)."""
+  dhcpConfig: IP4DHCPConfiguration
+
+  """The list of DNS Server configs (ordered by the index of definition)."""
+  dnsServers: [IPDnsServerConfiguration]
+
+  """The DNS suffix search order."""
+  dnsSearchSuffixes: [String]
+
+  """The list of topology connections for this interface.
+Note that there might be more than one interface in cases where you have non-managed
+switches conneting devices"""
+  topologyConnections: [TopologyConnection]
+
+  """The list of network interfaces physically connected to this interface.
+Note that there might be more than one interface in cases where you have non-managed
+switches conneting devices"""
+  connectedNetworkInterfaces: [NetworkInterface]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.network.NetworkInterface'
+fragment NetworkInterfaceFields on NetworkInterface {
+  id
+  index
+  portId
+  physicalAddress
+  description
+  extendedDescription
+  annotation
+  speed
+  mtu
+  type
+  operationalStatus
+  administrativeStatus
+  duplexMode
+  dhcpEnabled
+  dnsSuffix
+  device { ... DeviceFields }
+  ip4Transports { ... IP4TransportFields }
+  ip6Transports { ... IP6TransportFields }
+  dhcpConfig { ... IP4DHCPConfigurationFields }
+  dnsServers { ... IPDnsServerConfigurationFields }
+  dnsSearchSuffixes
+  topologyConnections { ... TopologyConnectionFields }
+  connectedNetworkInterfaces { ... NetworkInterfaceFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.PhysicalDisk'
+"""The physical disk represents a disk attached to a disk slot."""
+type PhysicalDisk {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The disk model."""
+  model: String
+
+  """The disk manufacturer."""
+  manufacturer: String
+
+  """The disk serialNumber."""
+  serialNumber: String
+
+  """A disk's firmware version."""
+  fwVersion: String
+
+  """The disk status."""
+  status: DiskStatus
+
+  """The disk size in KB."""
+  size: Long
+
+  """The list of disk partitions."""
+  paritions: [DiskPartition]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.PhysicalDisk'
+fragment PhysicalDiskFields on PhysicalDisk {
+  id
+  model
+  manufacturer
+  serialNumber
+  fwVersion
+  status
+  size
+  paritions { ... DiskPartitionFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.PhysicalDiskSlot'
+"""The physical disk slot represents the slot to which a disk is connected."""
+type PhysicalDiskSlot {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The physical disk slotid."""
+  slotId: String
+
+  """The physical disk socket designation"""
+  socketDesignation: String
+
+  """The physical disk assigned to this slot"""
+  disk: PhysicalDisk
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.PhysicalDiskSlot'
+fragment PhysicalDiskSlotFields on PhysicalDiskSlot {
+  id
+  slotId
+  socketDesignation
+  disk { ... PhysicalDiskFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.Processor'
+"""The processor represents a processor within a processor slot on the mainboard."""
+type Processor {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The processor model."""
+  model: String
+
+  """The processor raw model as it comes from the BIOS information."""
+  rawModel: String
+
+  """The processor manufacturer."""
+  manufacturer: String
+
+  """The processor device id."""
+  devID: String
+
+  """The processor address width."""
+  addressWidth: Int
+
+  """The processor data width."""
+  dataWidth: Int
+
+  """The processor level 2 cache size."""
+  l2CacheSize: Int
+
+  """The processor level 2 cache speed."""
+  l2CacheSpeed: Int
+
+  """The processor level 3 cache size."""
+  l3CacheSize: Int
+
+  """The processor level 3 cache speed."""
+  l3CacheSpeed: Int
+
+  """The number of cores."""
+  numberOfCores: Int
+
+  """The number of enabled cores. Some servers allow to disable cores.
+For instance to be license compliant for software that is licensed per core."""
+  numberOfEnabledCores: Int
+
+  """The number of threads."""
+  numberOfThreads: Int
+
+  """The current clock speed at the time of the scan in Mhz"""
+  currentClockSpeed: Int
+
+  """The maximal clock speed at the time of the scan in Mhz"""
+  maxClockSpeed: Int
+
+  """The maximal clock speed at the time of the scan in Mhz"""
+  status: ProcessorStatus
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.Processor'
+fragment ProcessorFields on Processor {
+  id
+  model
+  rawModel
+  manufacturer
+  devID
+  addressWidth
+  dataWidth
+  l2CacheSize
+  l2CacheSpeed
+  l3CacheSize
+  l3CacheSpeed
+  numberOfCores
+  numberOfEnabledCores
+  numberOfThreads
+  currentClockSpeed
+  maxClockSpeed
+  status
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.ProcessorSlot'
+"""The processor slot represents a slot for the processor on the mainboard."""
+type ProcessorSlot {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The processor slot id."""
+  slotId: String
+
+  """The processor socket designation"""
+  socketDesignation: String
+
+  """The processor assigned to this slot"""
+  processor: Processor
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.ProcessorSlot'
+fragment ProcessorSlotFields on ProcessorSlot {
+  id
+  slotId
+  socketDesignation
+  processor { ... ProcessorFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.SystemBoard'
+"""The device's system board."""
+type SystemBoard {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The system board model."""
+  model: String
+
+  """The system board manufacturer."""
+  manufacturer: String
+
+  """The system board serial number."""
+  serialNumber: String
+
+  """The system board version."""
+  version: String
+
+  """The system board part number."""
+  partNumber: String
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.SystemBoard'
+fragment SystemBoardFields on SystemBoard {
+  id
+  model
+  manufacturer
+  serialNumber
+  version
+  partNumber
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.TpmModule'
+"""A TPM module used for hardware encryption."""
+type TpmModule {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The corresponding device."""
+  device: Device
+
+  """A flag whether the TPM module is activated."""
+  activated: Boolean
+
+  """A flag whether the TPM module is enabled."""
+  enabled: Boolean
+
+  """A flag whether the TPM module is owned."""
+  owned: Boolean
+
+  """A TPM module's manufacturer."""
+  manufacturer: String
+
+  """A TPM module's version."""
+  version: String
+
+  """A TPM module's physical presence version."""
+  physicalPresenceVersion: String
+
+  """A TPM module's specification version."""
+  specVersion: String
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.TpmModule'
+fragment TpmModuleFields on TpmModule {
+  id
+  device { ... DeviceFields }
+  activated
+  enabled
+  owned
+  manufacturer
+  version
+  physicalPresenceVersion
+  specVersion
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.VideoController'
+"""The video controller represents a video controller within a video controller slot on the mainboard."""
+type VideoController {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The video controller model."""
+  model: String
+
+  """The video controller manufacturer."""
+  manufacturer: String
+
+  """The video controller serial number."""
+  serialNumber: String
+
+  """The video controller's current vertical resolution."""
+  verticalResolution: Int
+
+  """The video controller's current horizontal resolution."""
+  horizontalResolution: Int
+
+  """The video controller's installed memory in KB."""
+  installedRamKB: Int
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.VideoController'
+fragment VideoControllerFields on VideoController {
+  id
+  model
+  manufacturer
+  serialNumber
+  verticalResolution
+  horizontalResolution
+  installedRamKB
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.hardware.VideoControllerSlot'
+"""The video controller slot represents a slot for a video controller on the mainboard."""
+type VideoControllerSlot {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The video controller slot id."""
+  slotId: String
+
+  """The video controller socket designation"""
+  socketDesignation: String
+
+  """The video controller assigned to this slot"""
+  videoController: VideoController
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.hardware.VideoControllerSlot'
+fragment VideoControllerSlotFields on VideoControllerSlot {
+  id
+  slotId
+  socketDesignation
+  videoController { ... VideoControllerFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.network.PortConnection'
+"""The port connection object is used to store
+- an open TCP/IP or UDP port
+- a TCP/IP connection between two processes on the same or different device
+
+The connectionState defines whether the port is listening or whether it is a TCP/IP connection."""
+type PortConnection {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The time when this connection/open port has been scanned for the last time."""
+  discoveryTime: DateTime
+
+  """The process that initiated the TCP/IP connection."""
+  sourceProcess: Process
+
+  """The process that is the target of the TCP/IP connection."""
+  targetProcess: Process
+
+  """The device that hosts the source of the TCP/IP connection."""
+  sourceDevice: Device
+
+  """The process that hosts the target of the TCP/IP connection."""
+  targetDevice: Device
+
+  """The source port that is used by the initiating process to establish this connection or listen on this port."""
+  sourcePortNumber: Int
+
+  """The target port for this TCP/IP connection."""
+  targetPortNumber: Int
+
+  """The IP address that is used by the initiating process to establish this connection."""
+  sourceAddress: String
+
+  """The target IP address that this connection connects to."""
+  targetAddress: String
+
+  """The name for a connection's source port."""
+  sourcePortName: String
+
+  """The description for a connection's source port."""
+  sourcePortDescription: String
+
+  """The name for a connection's target port."""
+  targetPortName: String
+
+  """The description for a connection's target port."""
+  targetPortDescription: String
+
+  """The connection state."""
+  state: TcpConnectionState
+
+  """The connection state."""
+  type: PortConnectionType
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.network.PortConnection'
+fragment PortConnectionFields on PortConnection {
+  id
+  discoveryTime
+  sourceProcess { ... ProcessFields }
+  targetProcess { ... ProcessFields }
+  sourceDevice { ... DeviceFields }
+  targetDevice { ... DeviceFields }
+  sourcePortNumber
+  targetPortNumber
+  sourceAddress
+  targetAddress
+  sourcePortName
+  sourcePortDescription
+  targetPortName
+  targetPortDescription
+  state
+  type
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.network.SnmpAgentData'
+"""The entity holds basic data coming from the SNMP protocol."""
+type SnmpAgentData {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The SNMP system object id for this device. The SNMP system object ids are created by the vendors to identify a model, series or operating system."""
+  sysObjectId: String
+
+  """The SNMP system name."""
+  sysName: String
+
+  """The SNMP system description. The system description is a string that each manufacturer or OS vendor creates for the device or operating system."""
+  sysDescription: String
+
+  """The SNMP system location. The system location string is usually configured by the owner of a device."""
+  sysLocation: String
+
+  """The SNMP system contact. The system contactn string is usually configured by the owner of a device."""
+  sysContact: String
+
+  """The dot1dBaseBridge address is a unique identifier usually used by swtiches and routers. In most cases, it is the 'base' mac address."""
+  dot1dBaseBridgeAddress: String
+
+  """Each SNMP engine has a unique engine id."""
+  engineId: String
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.network.SnmpAgentData'
+fragment SnmpAgentDataFields on SnmpAgentData {
+  id
+  sysObjectId
+  sysName
+  sysDescription
+  sysLocation
+  sysContact
+  dot1dBaseBridgeAddress
+  engineId
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.software.Application'
+"""The applications installed on an operating system."""
+type Application {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The application name"""
+  name: String
+
+  """The application version"""
+  version: String
+
+  """The application manufacturer"""
+  manufacturer: String
+
+  """The list of installations for this application"""
+  installations: [InstalledApplication]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.software.Application'
+fragment ApplicationFields on Application {
+  id
+  name
+  version
+  manufacturer
+  installations { ... InstalledApplicationFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.software.ApplicationInstance'
+"""The applications installed on an operating system."""
+type ApplicationInstance {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The application instance name"""
+  name: String
+
+  """The installation path for the application that this instance belongs to."""
+  applicationInstallPath: String
+
+  """The instance path (if it exists)."""
+  instancePath: String
+
+  """The application instance type"""
+  type: SoftwareInstanceType
+
+  """The operating system that the instance is installed on"""
+  operatingSystem: OperatingSystem
+
+  """The application that is providing this instance"""
+  application: Application
+
+  """Ports that this application instance is listening on"""
+  ports: [PortConnection]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.software.ApplicationInstance'
+fragment ApplicationInstanceFields on ApplicationInstance {
+  id
+  name
+  applicationInstallPath
+  instancePath
+  type
+  operatingSystem { ... OperatingSystemFields }
+  application { ... ApplicationFields }
+  ports { ... PortConnectionFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.software.Certificate'
+"""A certificate installed on an operating systems's certificate store."""
+type Certificate {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The certificate's issuer"""
+  issuer: String
+
+  """The certificate's subject"""
+  subject: String
+
+  """The certificate's version"""
+  version: String
+
+  """The certificate's serial number"""
+  serialNumber: String
+
+  """The certificate's key length"""
+  keyLength: Int
+
+  """The certificate's key type"""
+  keyType: PublicKeyEncryptionType
+
+  """The certificate's oid"""
+  oid: String
+
+  """The certificate is not valid before this date"""
+  notBefore: DateTime
+
+  """The certificate is not valid after this date"""
+  notAfter: DateTime
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.software.Certificate'
+fragment CertificateFields on Certificate {
+  id
+  issuer
+  subject
+  version
+  serialNumber
+  keyLength
+  keyType
+  oid
+  notBefore
+  notAfter
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.software.InstalledApplication'
+"""An application installed on an operating system."""
+type InstalledApplication {
+  """The associated license"""
+  license: License
+
+  """The application installation path"""
+  installationPath: String
+
+  """The application installation timestamp"""
+  installationDate: DateTime
+
+  """The source where we got the application information from (e.g. Add/Remove Programs, rpm, dpkg, ...)"""
+  source: ApplicationSource
+
+  """A flag whether the application is installed as a Microsoft click to run application"""
+  isClickToRun: Boolean
+
+  """The operating system the software is installed on"""
+  operatingSystem: OperatingSystem
+
+  """The associated application"""
+  application: Application
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.software.InstalledApplication'
+fragment InstalledApplicationFields on InstalledApplication {
+  license { ... LicenseFields }
+  installationPath
+  installationDate
+  source
+  isClickToRun
+  operatingSystem { ... OperatingSystemFields }
+  application { ... ApplicationFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.software.InstalledCertificate'
+"""A certificate stored in the operating system's certificate store."""
+type InstalledCertificate {
+  """The certificate path"""
+  path: String
+
+  """The associated certificate"""
+  certificate: Certificate
+
+  """The operating system the software is installed on"""
+  operatingSystem: OperatingSystem
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.software.InstalledCertificate'
+fragment InstalledCertificateFields on InstalledCertificate {
+  path
+  certificate { ... CertificateFields }
+  operatingSystem { ... OperatingSystemFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.software.InstalledPatch'
+"""A patch installed on an operating system."""
+type InstalledPatch {
+  """The patch installation timestamp"""
+  installationDate: DateTime
+
+  """The operating system that this patch is installed on"""
+  operatingSystem: OperatingSystem
+
+  """The associated patch"""
+  patch: Patch
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.software.InstalledPatch'
+fragment InstalledPatchFields on InstalledPatch {
+  installationDate
+  operatingSystem { ... OperatingSystemFields }
+  patch { ... PatchFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.software.InstalledService'
+"""A service installed on an operating system."""
+type InstalledService {
+  """The service installation path"""
+  installationPath: String
+
+  """The parameters that this service is called with"""
+  parameters: String
+
+  """The binary name for this service"""
+  binaryName: String
+
+  """The display name for this service"""
+  displayName: String
+
+  """The service installation path"""
+  startupMode: ServiceStartupMode
+
+  """The service installation path"""
+  status: ServiceStatus
+
+  """The service installation path"""
+  failureAction: ServiceFailureAction
+
+  """The operating system that this service is installed on"""
+  operatingSystem: OperatingSystem
+
+  """The associated service"""
+  service: Service
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.software.InstalledService'
+fragment InstalledServiceFields on InstalledService {
+  installationPath
+  parameters
+  binaryName
+  displayName
+  startupMode
+  status
+  failureAction
+  operatingSystem { ... OperatingSystemFields }
+  service { ... ServiceFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.software.License'
+"""A software license."""
+type License {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The license product id"""
+  productId: String
+
+  """The license product key"""
+  productKey: String
+
+  """A license comment"""
+  comment: String
+
+  """The license type"""
+  type: LicenseType
+
+  """The license type"""
+  status: SoftwareLicenseStatus
+
+  """A license's expiration date"""
+  expirationDate: DateTime
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.software.License'
+fragment LicenseFields on License {
+  id
+  productId
+  productKey
+  comment
+  type
+  status
+  expirationDate
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.software.OperatingSystem'
+"""The operating system for a specific device."""
+type OperatingSystem {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The operating system family (e.g. Windows, Linux, HP-UX, ...)"""
+  osFamily: String
+
+  """The operating system version (e.g. Windows 10, Windows 2008 Server, ...)"""
+  osVersion: String
+
+  """The kernel version"""
+  kernelVersion: String
+
+  """The patch level (e.g. Service Pack 3)"""
+  patchLevel: String
+
+  """The patch level (e.g. Service Pack 3)"""
+  owner: String
+
+  """The locale that is used for this operating system"""
+  locale: String
+
+  """The locale code that is used for this operating system"""
+  localeCode: Int
+
+  """The operating system's unique id"""
+  uniqueId: String
+
+  """The operting system product key"""
+  productKey: String
+
+  """The operating system's manufacturer"""
+  manufacturer: String
+
+  """The raw version as it gets delivered by the operating system"""
+  rawVersion: String
+
+  """The device that this operating system is installed on."""
+  device: Device
+
+  """The list of installed applications."""
+  installedApplications: [InstalledApplication]
+
+  """The list of installed patches."""
+  installedPatches: [InstalledPatch]
+
+  """The list of installed certificates."""
+  installedCertificates: [InstalledCertificate]
+
+  """The list of installed services."""
+  installedServices: [InstalledService]
+
+  """The list of all application instances (e.g. database instances, web server instances, ...)."""
+  applicationInstances: [ApplicationInstance]
+
+  """The list of all processes running on this operating system."""
+  processes: [Process]
+
+  """The list of all mapped printers."""
+  mappedPrinters: [MappedPrinter]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.software.OperatingSystem'
+fragment OperatingSystemFields on OperatingSystem {
+  id
+  osFamily
+  osVersion
+  kernelVersion
+  patchLevel
+  owner
+  locale
+  localeCode
+  uniqueId
+  productKey
+  manufacturer
+  rawVersion
+  device { ... DeviceFields }
+  installedApplications { ... InstalledApplicationFields }
+  installedPatches { ... InstalledPatchFields }
+  installedCertificates { ... InstalledCertificateFields }
+  installedServices { ... InstalledServiceFields }
+  applicationInstances { ... ApplicationInstanceFields }
+  processes { ... ProcessFields }
+  mappedPrinters { ... MappedPrinterFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.software.Patch'
+"""A patch."""
+type Patch {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The patch name"""
+  name: String
+
+  """The patch manufacturer"""
+  manufacturer: String
+
+  """The list of installations for this patch"""
+  installations: [InstalledPatch]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.software.Patch'
+fragment PatchFields on Patch {
+  id
+  name
+  manufacturer
+  installations { ... InstalledPatchFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.software.Process'
+"""A process running on an operating system."""
+type Process {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The binary name for this process"""
+  binaryName: String
+
+  """The binary's path"""
+  path: String
+
+  """The parameters that this binary is called with"""
+  parameters: String
+
+  """The process id"""
+  processId: Int
+
+  """The parent process id"""
+  parentProcessId: Int
+
+  """The list of TCP/IP ports that are in listen mode."""
+  listeningPorts: [PortConnection]
+
+  """The list of listening ports and TCP/IP connections for this process."""
+  tcpIPConnections: [PortConnection]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.software.Process'
+fragment ProcessFields on Process {
+  id
+  binaryName
+  path
+  parameters
+  processId
+  parentProcessId
+  listeningPorts { ... PortConnectionFields }
+  tcpIPConnections { ... PortConnectionFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.software.Service'
+"""A service/daemon."""
+type Service {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The service name"""
+  name: String
+
+  """The service manufacturer"""
+  manufacturer: String
+
+  """The list of installations for this service"""
+  installations: [InstalledService]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.software.Service'
+fragment ServiceFields on Service {
+  id
+  name
+  manufacturer
+  installations { ... InstalledServiceFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.entities.virtualization.VirtualDatacenter'
+"""A virtual datacenter (e.g. within a Vmware VCenter environment)."""
+type VirtualDatacenter {
+  """The internal id this entity. Note that the id might change when the entity gets deleted and recreated."""
+  id: ID!
+
+  """The datacenter name."""
+  name: String
+
+  """A datacenter's unique id."""
+  uniqueId: String
+
+  """The datacenter type"""
+  type: DatacenterType
+
+  """The set of clusters within this datacenter."""
+  clusters: [Cluster]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.entities.virtualization.VirtualDatacenter'
+fragment VirtualDatacenterFields on VirtualDatacenter {
+  id
+  name
+  uniqueId
+  type
+  clusters { ... ClusterFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.references.cluster.ClusterReference'
+input ClusterReference {
+  """The unique database id for the cluster"""
+  id: Long
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.references.config.network.IP4NetworkReference'
+input IP4NetworkReference {
+  """The unique database id for the IP4 network"""
+  id: Long
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.references.config.network.IP6NetworkReference'
+input IP6NetworkReference {
+  """The unique database id for the IP6 network"""
+  id: Long
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.references.DeviceReference'
+input DeviceReference {
+  """The unique database id for the device"""
+  id: Long
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.references.event.EventReference'
+input EventReference {
+  """The unique database id for the event"""
+  id: Long
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.references.virtualization.DatacenterReference'
+input DatacenterReference {
+  """The unique database id for the datacenter"""
+  id: Long
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.repositories.config.network.DirectoryRepository'
+"""This type provides directory related queries"""
+type Directories {
+  """Find all directory entries"""
+  findAll: [Directory]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.repositories.config.network.DirectoryRepository'
+fragment DirectoriesFields on Directories {
+  findAll { ... DirectoryFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.repositories.config.network.IP4NetworkRepository'
+"""This type provides IP4 network related queries"""
+type IP4Networks {
+  """Finds all IP4 networks with a given network base address and subnet mask"""
+  findIP4NetworksByBaseAddressAndMask(networkBaseAddress: String, subnetMask: String): [IP4Network]
+
+  """Finds all IP4 networks with a given network base address"""
+  findIP4NetworksByBaseAddress(networkBaseAddress: String): [IP4Network]
+
+  """Find all IP4 networks"""
+  findAll: [IP4Network]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.repositories.config.network.IP4NetworkRepository'
+fragment IP4NetworksFields on IP4Networks {
+  findIP4NetworksByBaseAddressAndMask(networkBaseAddress: String, subnetMask: String) { ... IP4NetworkFields }
+  findIP4NetworksByBaseAddress(networkBaseAddress: String) { ... IP4NetworkFields }
+  findAll { ... IP4NetworkFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.repositories.config.network.IP6NetworkRepository'
+"""This type provides IP6 network related queries"""
+type IP6Networks {
+  """Find all IP6 networks"""
+  findAll: [IP6Network]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.repositories.config.network.IP6NetworkRepository'
+fragment IP6NetworksFields on IP6Networks {
+  findAll { ... IP6NetworkFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.repositories.config.network.TopologyRepository'
+"""This type provides topology connection related queries"""
+type TopologyConnections {
+  """Find all topology connections"""
+  findAll: [TopologyConnection]
+
+  """Find all topology connections for one device"""
+  findByDevice(deviceRef: DeviceReference): [TopologyConnection]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.repositories.config.network.TopologyRepository'
+fragment TopologyConnectionsFields on TopologyConnections {
+  findAll { ... TopologyConnectionFields }
+  findByDevice(deviceRef: DeviceReference) { ... TopologyConnectionFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.repositories.hardware.network.NetworkInterfaceRepository'
+"""This type provides network interface related queries"""
+type NetworkInterfaces {
+  """Find all network interfaces"""
+  findAll: [NetworkInterface]
+
+  """Finds all network interfaces with one of the mac addresses (mac addresses or WWNs)."""
+  findNetworkInterfacesByPhysicalAddresses(physicalAddresses: [String]): [NetworkInterface]
+
+  """Finds all network interfaces by type."""
+  findNetworkInterfacesByType(type: InterfaceType): [NetworkInterface]
+
+  """Finds all network interfaces with a specific physical address (mac address or WWN)."""
+  findNetworkInterfacesByPhysicalAddress(physicalAddress: String): [NetworkInterface]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.repositories.hardware.network.NetworkInterfaceRepository'
+fragment NetworkInterfacesFields on NetworkInterfaces {
+  findAll { ... NetworkInterfaceFields }
+  findNetworkInterfacesByPhysicalAddresses(physicalAddresses: [String]) { ... NetworkInterfaceFields }
+  findNetworkInterfacesByType(type: InterfaceType) { ... NetworkInterfaceFields }
+  findNetworkInterfacesByPhysicalAddress(physicalAddress: String) { ... NetworkInterfaceFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.repositories.software.ApplicationRepository'
+"""This type application related queries"""
+type Applications {
+  """Find all applications with a given name"""
+  findByNameAndVersion(name: String, version: String): [Application]
+
+  """Find all applications with a given name"""
+  findByName(name: String): [Application]
+
+  """Find all applications"""
+  findAll: [Application]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.repositories.software.ApplicationRepository'
+fragment ApplicationsFields on Applications {
+  findByNameAndVersion(name: String, version: String) { ... ApplicationFields }
+  findByName(name: String) { ... ApplicationFields }
+  findAll { ... ApplicationFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.repositories.software.InstalledServiceRepository'
+"""This type provides installed service related queries"""
+type InstalledServices {
+  """Find installed services with a given status"""
+  findByStatus(status: ServiceStatus): [InstalledService]
+
+  """Find installed services with a configured startup mode"""
+  findByStartupMode(startupMode: ServiceStartupMode): [InstalledService]
+
+  """Find installed services with a configured failure action"""
+  findByFailureAction(failureAction: ServiceFailureAction): [InstalledService]
+
+  """Find installed services with a display name"""
+  findByDisplayName(displayName: String): [InstalledService]
+
+  """Find all installed services"""
+  findAll: [InstalledService]
+
+  """Find installed services with a given binary"""
+  findByBinaryName(binary: String): [InstalledService]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.repositories.software.InstalledServiceRepository'
+fragment InstalledServicesFields on InstalledServices {
+  findByStatus(status: ServiceStatus) { ... InstalledServiceFields }
+  findByStartupMode(startupMode: ServiceStartupMode) { ... InstalledServiceFields }
+  findByFailureAction(failureAction: ServiceFailureAction) { ... InstalledServiceFields }
+  findByDisplayName(displayName: String) { ... InstalledServiceFields }
+  findAll { ... InstalledServiceFields }
+  findByBinaryName(binary: String) { ... InstalledServiceFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.repositories.software.PatchRepository'
+"""This type provides patch related queries"""
+type Patches {
+  """Find all patches"""
+  findAll: [Patch]
+
+  """Find all patches with a given name"""
+  findByName(name: String): [Patch]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.repositories.software.PatchRepository'
+fragment PatchesFields on Patches {
+  findAll { ... PatchFields }
+  findByName(name: String) { ... PatchFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.repositories.software.ServiceRepository'
+"""This type provides service related queries"""
+type Services {
+  """Find all services with a given manufacturer"""
+  findByManufacturer(manufacturer: String): [Service]
+
+  """Find all services"""
+  findAll: [Service]
+
+  """Find all services with a given name"""
+  findByName(name: String): [Service]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.repositories.software.ServiceRepository'
+fragment ServicesFields on Services {
+  findByManufacturer(manufacturer: String) { ... ServiceFields }
+  findAll { ... ServiceFields }
+  findByName(name: String) { ... ServiceFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.repositories.virtualization.VirtualDatacenterRepository'
+"""This type provides virtual datacenter queries"""
+type VirtualDatacenters {
+  """Finds all virtual datacenters by name."""
+  findVirtualDatacentersByName(name: String): [VirtualDatacenter]
+
+  """Finds all virtual datacenters by unique id."""
+  findVirtualDatacentersByUniqueId(uniqueId: String): [VirtualDatacenter]
+
+  """Find all virtual datacenters"""
+  findAll: [VirtualDatacenter]
+
+  """Finds all virtual datacenters by type."""
+  findVirtualDatacentersByType(type: DatacenterType): [VirtualDatacenter]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.jpa.repositories.virtualization.VirtualDatacenterRepository'
+fragment VirtualDatacentersFields on VirtualDatacenters {
+  findVirtualDatacentersByName(name: String) { ... VirtualDatacenterFields }
+  findVirtualDatacentersByUniqueId(uniqueId: String) { ... VirtualDatacenterFields }
+  findAll { ... VirtualDatacenterFields }
+  findVirtualDatacentersByType(type: DatacenterType) { ... VirtualDatacenterFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.common.Paging'
+"""Paging configuration"""
+input PagingInput {
+  """Start of the paging area. When less than 0, it starts with 0"""
+  start: Int!
+
+  """Size of the page in rows. When less or equal to 0, it returns all rows."""
+  rowCount: Int!
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.common.ProgressInfo'
+"""This object contains information about background processes and their status/progress.
+Lengthly operations can return a ProgressInfo object which holds the current state of the operation.
+The client can poll with the instanceId the status of such an operation.
+
+Once the operation has failed or finished, the result will stay on the server for a while and will then be deleted."""
+interface ProgressInfo {
+  """The instanceId identifies a specific operation. Use this instanceId to poll the current status."""
+  instanceId: String
+
+  """The maximum value for the operation's progress. A max value < 0 inidicates, that the maximum value is not known for this operation."""
+  maxValue: Int
+
+  """The current value for the operation's progress. Together with the maxValue, you can calculate the percentage."""
+  currentValue: Int
+
+  """The current action being performed. Can be empty or null."""
+  action: String
+
+  """The current subaction being performed. Can be empty or null."""
+  subAction: String
+
+  """A message that describes the completion status once the task is completed or canceled."""
+  completionMessage: String
+
+  """Is the task finished?"""
+  isFinished: Boolean!
+
+  """Has the task errors when finished?"""
+  withErrors: Boolean!
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.common.ProgressInfo'
+fragment ProgressInfoFields on ProgressInfo {
+  instanceId
+  maxValue
+  currentValue
+  action
+  subAction
+  completionMessage
+  isFinished
+  withErrors
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.common.SearchConfiguration'
+"""Search and filter configuration"""
+input SearchConfigurationInput {
+  """The search string"""
+  searchString: String
+
+  """A flag whether to ignore case or not when searching"""
+  ignoreCase: Boolean!
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.common.SortEntry'
+"""Paging configuration"""
+input SortEntryInput {
+  """The field to sort by"""
+  sortBy: FieldDescriptionInput
+
+  """The sort direction"""
+  sortOrder: SortOrder
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.monitoring.caching.CacheStatisticsEntry'
+"""A cache statistics entry contains information about the number of items within a specific cache"""
+type CacheStatisticsEntry {
+  """The number of entries in the specific cache"""
+  count: Long!
+
+  """The cache name"""
+  cacheName: String
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.monitoring.caching.CacheStatisticsEntry'
+fragment CacheStatisticsEntryFields on CacheStatisticsEntry {
+  count
+  cacheName
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.monitoring.memory.MemoryStatistics'
+"""The memory statistics A cache statistics entry contains information about the number of items within a specific cache"""
+type MemoryStatistics {
+  """The maximum number of heap space in bytes"""
+  maxHeap: Long!
+
+  """The currently used heap space in bytes"""
+  usedHeap: Long!
+
+  """The currently used heap space in bytes"""
+  freeHeap: Long!
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.monitoring.memory.MemoryStatistics'
+fragment MemoryStatisticsFields on MemoryStatistics {
+  maxHeap
+  usedHeap
+  freeHeap
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.login.LoginResult'
+type LoginResult {
+  """The status for the login call"""
+  status: LoginResultStatus
+
+  """The access token"""
+  accessToken: String
+
+  """The renewal token"""
+  refreshToken: String
+
+  """The list of rights for the user"""
+  rights: [InventoryUserRight]
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.login.LoginResult'
+fragment LoginResultFields on LoginResult {
+  status
+  accessToken
+  refreshToken
+  rights
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.cluster.ClusterDeletionProgressInfo'
+"""This object contains information about the background task deleteClusters within the clusterManagement interface.
+Deleting clusters can be a lengthly operation and the async version can delete the clusters in the background.
+This object can be used to track the progress and hold the result of the operation."""
+type ClusterDeletionProgressInfo implements ProgressInfo {
+  """The instanceId identifies a specific operation. Use this instanceId to poll the current status."""
+  instanceId: String
+
+  """The maximum value for the operation's progress. A max value < 0 inidicates, that the maximum value is not known for this operation."""
+  maxValue: Int
+
+  """The current value for the operation's progress. Together with the maxValue, you can calculate the percentage."""
+  currentValue: Int
+
+  """The current action being performed. Can be empty or null."""
+  action: String
+
+  """The current subaction being performed. Can be empty or null."""
+  subAction: String
+
+  """A message that describes the completion status once the task is completed or canceled."""
+  completionMessage: String
+
+  """Is the task finished?"""
+  isFinished: Boolean!
+
+  """Has the task errors when finished?"""
+  withErrors: Boolean!
+
+  """When the operation completed, this property holds the list of clusters which could not be found during the deletion process."""
+  notFoundClusters: [Cluster]
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.cluster.ClusterDeletionProgressInfo'
+fragment ClusterDeletionProgressInfoFields on ClusterDeletionProgressInfo {
+  instanceId
+  maxValue
+  currentValue
+  action
+  subAction
+  completionMessage
+  isFinished
+  withErrors
+  notFoundClusters { ... ClusterFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.datacenter.DatacenterDeletionProgressInfo'
+"""This object contains information about the background task deleteVirtualDatacenters within the virtualDatacenterManagement interface.
+Deleting virtual datacenters can be a lengthly operation and the async version can delete the virtual datacenters in the background.
+This object can be used to track the progress and hold the result of the operation."""
+type DatacenterDeletionProgressInfo implements ProgressInfo {
+  """The instanceId identifies a specific operation. Use this instanceId to poll the current status."""
+  instanceId: String
+
+  """The maximum value for the operation's progress. A max value < 0 inidicates, that the maximum value is not known for this operation."""
+  maxValue: Int
+
+  """The current value for the operation's progress. Together with the maxValue, you can calculate the percentage."""
+  currentValue: Int
+
+  """The current action being performed. Can be empty or null."""
+  action: String
+
+  """The current subaction being performed. Can be empty or null."""
+  subAction: String
+
+  """A message that describes the completion status once the task is completed or canceled."""
+  completionMessage: String
+
+  """Is the task finished?"""
+  isFinished: Boolean!
+
+  """Has the task errors when finished?"""
+  withErrors: Boolean!
+
+  """When the operation completed, this property holds the list of devices which could not be found during the deletion process."""
+  virtualDatacentersNotFound: [VirtualDatacenter]
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.datacenter.DatacenterDeletionProgressInfo'
+fragment DatacenterDeletionProgressInfoFields on DatacenterDeletionProgressInfo {
+  instanceId
+  maxValue
+  currentValue
+  action
+  subAction
+  completionMessage
+  isFinished
+  withErrors
+  virtualDatacentersNotFound { ... VirtualDatacenterFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.devices.DeviceDeletionProgressInfo'
+"""This object contains information about the background task deleteDevices within the deviceManagement interface.
+Deleting devices can be a lengthly operation and the async version can delete the devices in the background. This object can be used to track the progress
+and hold the result of the operation."""
+type DeviceDeletionProgressInfo implements ProgressInfo {
+  """The instanceId identifies a specific operation. Use this instanceId to poll the current status."""
+  instanceId: String
+
+  """The maximum value for the operation's progress. A max value < 0 inidicates, that the maximum value is not known for this operation."""
+  maxValue: Int
+
+  """The current value for the operation's progress. Together with the maxValue, you can calculate the percentage."""
+  currentValue: Int
+
+  """The current action being performed. Can be empty or null."""
+  action: String
+
+  """The current subaction being performed. Can be empty or null."""
+  subAction: String
+
+  """A message that describes the completion status once the task is completed or canceled."""
+  completionMessage: String
+
+  """Is the task finished?"""
+  isFinished: Boolean!
+
+  """Has the task errors when finished?"""
+  withErrors: Boolean!
+
+  """When the operation completed, this property holds the list of devices which could not be found during the deletion process."""
+  devicesNotFound: [Device]
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.devices.DeviceDeletionProgressInfo'
+fragment DeviceDeletionProgressInfoFields on DeviceDeletionProgressInfo {
+  instanceId
+  maxValue
+  currentValue
+  action
+  subAction
+  completionMessage
+  isFinished
+  withErrors
+  devicesNotFound { ... DeviceFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.devices.GraphQLSshAccount'
+"""Class for storing ssh key and account data"""
+input GraphQLSshAccount {
+  """name for the ssh key"""
+  name: String
+
+  """a description for the ssh key"""
+  description: String
+
+  """account for the ssh key"""
+  account: String
+
+  """account type for the ssh key"""
+  accountType: AccountType
+
+  """the private key"""
+  privateKey: String
+
+  """the public key"""
+  publicKey: String
+
+  """the passphrase"""
+  passphrase: String
+
+  """the length in bits"""
+  lengthInBits: Int
+
+  """the ssh key type"""
+  sshKeyType: SshKeyType
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.event.EventDeletionProgressInfo'
+"""This object contains information about the background task deleteEvents within the eventManagement interface.
+Deleting events can be a lengthly operation and the async version can delete the events in the background.
+This object can be used to track the progress and hold the result of the operation."""
+type EventDeletionProgressInfo implements ProgressInfo {
+  """The instanceId identifies a specific operation. Use this instanceId to poll the current status."""
+  instanceId: String
+
+  """The maximum value for the operation's progress. A max value < 0 inidicates, that the maximum value is not known for this operation."""
+  maxValue: Int
+
+  """The current value for the operation's progress. Together with the maxValue, you can calculate the percentage."""
+  currentValue: Int
+
+  """The current action being performed. Can be empty or null."""
+  action: String
+
+  """The current subaction being performed. Can be empty or null."""
+  subAction: String
+
+  """A message that describes the completion status once the task is completed or canceled."""
+  completionMessage: String
+
+  """Is the task finished?"""
+  isFinished: Boolean!
+
+  """Has the task errors when finished?"""
+  withErrors: Boolean!
+
+  """When the operation completed, this property holds the list of events which could not be found during the deletion process."""
+  notFoundEvents: [Event]
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.event.EventDeletionProgressInfo'
+fragment EventDeletionProgressInfoFields on EventDeletionProgressInfo {
+  instanceId
+  maxValue
+  currentValue
+  action
+  subAction
+  completionMessage
+  isFinished
+  withErrors
+  notFoundEvents { ... EventFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.administration.certificate.CertificateInfo'
+"""Information about a certificate in the certificate store"""
+type CertificateInfo {
+  """The certificate alias used in the certificate store"""
+  aliasName: String
+
+  """The certificate subject"""
+  subject: String
+
+  """The certificate issuer"""
+  issuer: String
+
+  """The certificate owner"""
+  owner: String
+
+  """The certificate serial number"""
+  serialNumber: String
+
+  """A flag whether the certificate is valid or not"""
+  isValid: Boolean
+
+  """The certificate start date"""
+  startDate: DateTime
+
+  """The certificate end date"""
+  endDate: DateTime
+
+  """The certificate type"""
+  type: String
+
+  """The certificate signature algorithm"""
+  signatureAlgorithm: String
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.query.administration.certificate.CertificateInfo'
+fragment CertificateInfoFields on CertificateInfo {
+  aliasName
+  subject
+  issuer
+  owner
+  serialNumber
+  isValid
+  startDate
+  endDate
+  type
+  signatureAlgorithm
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.administration.certificate.CertificateResult'
+"""The result for a certificate query"""
+type CertificateResult {
+  """The certificate"""
+  certificate: CertificateInfo
+
+  """The request status"""
+  status: Status
+
+  """The error message in case of errors"""
+  errorMessage: String
+
+  """The stack trace for the error"""
+  stackTrace: String
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.query.administration.certificate.CertificateResult'
+fragment CertificateResultFields on CertificateResult {
+  certificate { ... CertificateInfoFields }
+  status
+  errorMessage
+  stackTrace
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.configuration.application.ApplicationConfiguration'
+"""Queries about application configuration parameters"""
+type ApplicationConfiguration {
+  """Returns the GraphQL schema string"""
+  graphQLSchema: String
+
+  """Gets the license information"""
+  licenseInfo: LicenseInfo
+
+  """Gets if current HTTPS certificate is self-signed"""
+  isSelfSignedCertificate: Boolean!
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.query.configuration.application.ApplicationConfiguration'
+fragment ApplicationConfigurationFields on ApplicationConfiguration {
+  graphQLSchema
+  licenseInfo { ... LicenseInfoFields }
+  isSelfSignedCertificate
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.management.user.preferences.dashboard.DashboardPreferences'
+"""Queries for the dashboard user preferences"""
+type DashboardPreferences {
+  """Gets all dashboard locations for items with a specific id."""
+  dashboardLocations(idPrefix: String): [DashboardItemLocation]
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.query.management.user.preferences.dashboard.DashboardPreferences'
+fragment DashboardPreferencesFields on DashboardPreferences {
+  dashboardLocations(idPrefix: String) { ... DashboardItemLocationFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.management.user.preferences.UserPreferences'
+"""Queries about the user preferences"""
+type UserPreferences {
+  """Gets user permissions."""
+  permissions: [InventoryUserRight]
+
+  """Gets the settings object for dashboard items."""
+  dashboardPreferences: DashboardPreferences
+
+  """Gets user groups."""
+  groups: [InventoryUserGroupInfo]
+
+  """Gets the WEB UI preferences."""
+  webUIPreferences: WebUIPreferences
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.query.management.user.preferences.UserPreferences'
+fragment UserPreferencesFields on UserPreferences {
+  permissions
+  dashboardPreferences { ... DashboardPreferencesFields }
+  groups { ... InventoryUserGroupInfoFields }
+  webUIPreferences { ... WebUIPreferencesFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.management.user.UserManagement'
+"""Queries about the user management"""
+type UserManagement {
+  """Gets the user management queries."""
+  preferences: UserPreferences
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.query.management.user.UserManagement'
+fragment UserManagementFields on UserManagement {
+  preferences { ... UserPreferencesFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.reporting.scalar.ScalarReportConfig'
+"""The report config when getting scalar reports from the server"""
+input ScalarReportConfigInput {
+  """The report id"""
+  report: BuiltInReport
+
+  """The list of filters"""
+  filters: [FieldFilterInput]
+
+  """The report cache id. Reports can be cached. When using the cacheId, then the server gets the cached report. Otherwise, it gets the report from the database."""
+  reportCacheId: String
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.reporting.scalar.ScalarResult'
+"""The result for a scalar data request"""
+type ScalarResult {
+  """The query which created this report. Null if there is none..."""
+  query: String
+
+  """The list of scalar values. The list might include empty entries. This is used to indicate in the UI to add an additional space between two scalar values"""
+  values: [ScalarReportData]
+
+  """The report cache id"""
+  reportCacheId: String
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.query.reporting.scalar.ScalarResult'
+fragment ScalarResultFields on ScalarResult {
+  query
+  values { ... ScalarReportDataFields }
+  reportCacheId
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.reporting.table.TableDataResult'
+"""The result when getting table data from the reporting service"""
+type TableDataResult {
+  """The rows within a table (based on the selected paging, sorting and other settings)"""
+  rows: [Object]
+
+  """The number of total rows in the table (based on the selected searching, filtering, and other settings)"""
+  totalRows: Int!
+
+  """The number of currently visible rows based on the search settings.
+Note that entering search strings can reduce the number of visible rows in table because
+rows not matching the search criteria are removed from the actual result."""
+  visibleRows: Int!
+
+  """When the report gets called with an page offset which is outside the table data, then we return the last 25 rows and adjust the actual offset"""
+  actualOffset: Int!
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.query.reporting.table.TableDataResult'
+fragment TableDataResultFields on TableDataResult {
+  rows
+  totalRows
+  visibleRows
+  actualOffset
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.reporting.table.TableReportConfig'
+"""The report configuration when getting table data from the server"""
+input TableReportConfigInput {
+  """The report id"""
+  report: BuiltInReport
+
+  """The sort configuration"""
+  sortConfiguration: [SortEntryInput]
+
+  """The paging configutation. When null, then it returns all data"""
+  paging: PagingInput
+
+  """The paging configutation. When null, then it returns all data"""
+  searchConfig: SearchConfigurationInput
+
+  """The list of filters"""
+  filters: [FieldFilterInput]
+
+  """The report cache id. Reports can be cached. When using the cacheId, then the server gets the cached report. Otherwise, it gets the report from the database."""
+  reportCacheId: String
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.reporting.table.TableResult'
+"""The result for a table data request"""
+type TableResult {
+  """The table data"""
+  tableData: TableDataResult
+
+  """The report cache id"""
+  reportCacheId: String
+
+  """The query which created this report"""
+  query: String
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.query.reporting.table.TableResult'
+fragment TableResultFields on TableResult {
+  tableData { ... TableDataResultFields }
+  reportCacheId
+  query
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.subscriptions.login.PongRequest'
+"""Ping request"""
+type PongRequest {
+  """Application status"""
+  startMode: ApplicationStartMode
+
+  """Frontend session status"""
+  frontendState: SessionState
+
+  """Backend session status"""
+  backendState: SessionState
+
+  """Frontend connection attempts"""
+  frontendReconnectAttempts: Int
+
+  """Backend connection attempts"""
+  backendReconnectAttempts: Int
+
+  """Backend last retried timestamp"""
+  backendLastRetried: DateTime
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.subscriptions.login.PongRequest'
+fragment PongRequestFields on PongRequest {
+  startMode
+  frontendState
+  backendState
+  frontendReconnectAttempts
+  backendReconnectAttempts
+  backendLastRetried
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.reporting.base.FieldDescription'
+"""The FieldDescription describes a field within the application. The description includes an id, type"""
+type FieldDescription {
+  """Gets the label or column header within tables"""
+  columnHeader: String
+
+  """Gets the field default width as enumeration (which is later mapped to a style in the WEB UI)"""
+  webFieldWidth: FieldWidthEnum
+
+  """Gets the field default width for the WEB UI"""
+  defaultWEBFieldWidth: Int!
+
+  """The nature for a field"""
+  nature: FieldNature
+
+  """Gets the field default min width as enumeration (which is later mapped to a style in the WEB UI)"""
+  webFieldMinWidth: FieldWidthEnum
+
+  """Gets the internal field id"""
+  fieldId: String
+
+  """Gets the field min width for the WEB UI"""
+  defaultWEBFieldMinWidth: Int!
+
+  """Gets the field min width for the native UI"""
+  defaultFieldMinWidth: Int!
+
+  """A flag whether this field can contain line breaks"""
+  isMultilineField: Boolean!
+
+  """Gets the field type (FieldDescription, IdFieldDescription or KeyDescription)"""
+  type: String
+
+  """Checks whether a field is a numeric field."""
+  isNumeric: Boolean!
+
+  """Gets the canonical field type (FieldDescription, IdFieldDescription or KeyDescription)"""
+  canonicalType: String
+
+  """Gets the field value type (e.g. Integer, Boolean, PercentValue, ...)"""
+  valueType: String
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.common.reporting.base.FieldDescription'
+fragment FieldDescriptionFields on FieldDescription {
+  columnHeader
+  webFieldWidth
+  defaultWEBFieldWidth
+  nature
+  webFieldMinWidth
+  fieldId
+  defaultWEBFieldMinWidth
+  defaultFieldMinWidth
+  isMultilineField
+  type
+  isNumeric
+  canonicalType
+  valueType
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.reporting.base.FieldDescription'
+"""The FieldDescription describes a field within the application. The description includes an id, type"""
+input FieldDescriptionInput {
+  """Gets the label or column header within tables"""
+  columnHeader: String
+
+  """Gets the field default width as enumeration (which is later mapped to a style in the WEB UI)"""
+  webFieldWidth: FieldWidthEnum
+
+  """Gets the field default width for the WEB UI"""
+  defaultWEBFieldWidth: Int
+
+  """The nature for a field"""
+  nature: FieldNature
+
+  """Gets the field default min width as enumeration (which is later mapped to a style in the WEB UI)"""
+  webFieldMinWidth: FieldWidthEnum
+
+  """Gets the internal field id"""
+  fieldId: String!
+
+  """Gets the field min width for the WEB UI"""
+  defaultWEBFieldMinWidth: Int
+
+  """Gets the field min width for the native UI"""
+  defaultFieldMinWidth: Int
+
+  """A flag whether this field can contain line breaks"""
+  isMultilineField: Boolean
+
+  """Gets the field type (FieldDescription, IdFieldDescription or KeyDescription)"""
+  type: String
+
+  """Checks whether a field is a numeric field."""
+  isNumeric: Boolean
+
+  """Gets the canonical field type (FieldDescription, IdFieldDescription or KeyDescription)"""
+  canonicalType: String
+
+  """Gets the field value type (e.g. Integer, Boolean, PercentValue, ...)"""
+  valueType: String
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.reporting.base.FieldFilter'
+"""A filter used to filter reports by criterias"""
+type FieldFilter {
+  """The field description for this filter"""
+  fieldDescription: FieldDescription
+
+  """The filter value"""
+  filterValue: Object
+
+  """A display value in case the filter to display in the UI when the filterValue is just a database id or some other internal value"""
+  displayValue: Object
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.common.reporting.base.FieldFilter'
+fragment FieldFilterFields on FieldFilter {
+  fieldDescription { ... FieldDescriptionFields }
+  filterValue
+  displayValue
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.reporting.base.FieldFilter'
+"""A filter used to filter reports by criterias"""
+input FieldFilterInput {
+  """The field description for this filter"""
+  fieldDescription: FieldDescriptionInput
+
+  """The filter value"""
+  filterValue: Object
+
+  """A display value in case the filter to display in the UI when the filterValue is just a database id or some other internal value"""
+  displayValue: Object
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.reporting.base.scalar.ScalarFieldDescription'
+"""A scalar field description"""
+type ScalarFieldDescription {
+  """The field description for this scalar value"""
+  customAttributeId: Long
+
+  """The field description for this scalar value"""
+  fieldDescription: FieldDescription
+
+  """A flag that indicates whether a filed is diffable or not"""
+  isDiffable: Boolean!
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.common.reporting.base.scalar.ScalarFieldDescription'
+fragment ScalarFieldDescriptionFields on ScalarFieldDescription {
+  customAttributeId
+  fieldDescription { ... FieldDescriptionFields }
+  isDiffable
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.reporting.base.scalar.ScalarReportData'
+"""A scalar key/value pair"""
+type ScalarReportData {
+  """The field description for this key/value pair"""
+  scalarField: ScalarFieldDescription
+
+  """The number of versions in case the attribute has multiple versions"""
+  numberOfVersions: Long
+
+  """The value for this key/value pair"""
+  value: Object
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.common.reporting.base.scalar.ScalarReportData'
+fragment ScalarReportDataFields on ScalarReportData {
+  scalarField { ... ScalarFieldDescriptionFields }
+  numberOfVersions
+  value
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.reporting.base.scalar.ScalarReportDescription'
+"""A description for a scalar report. Scalar reports provide simple key value pairs."""
+type ScalarReportDescription {
+  """Returns the title for the report"""
+  title: String
+
+  """Returns the short title for the report (in some cases identical with the title)"""
+  shortTitle: String
+
+  """The list of filters"""
+  filters: [FieldFilter]
+
+  """A flag whether the panel with the values should be embedded in a scrollpane or not"""
+  embedInScrollPane: Boolean!
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.common.reporting.base.scalar.ScalarReportDescription'
+fragment ScalarReportDescriptionFields on ScalarReportDescription {
+  title
+  shortTitle
+  filters { ... FieldFilterFields }
+  embedInScrollPane
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.reporting.base.table.TableFieldDescription'
+"""A description for a field within a table"""
+type TableFieldDescription {
+  """A flag whether this column is sortable"""
+  isSortable: Boolean!
+
+  """The description for a field within a table"""
+  fieldDescription: FieldDescription
+
+  """A flag whether this column is visible or not"""
+  isVisible: Boolean!
+
+  """A flag whether this column can be sticky or not"""
+  isSticky: Boolean!
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.common.reporting.base.table.TableFieldDescription'
+fragment TableFieldDescriptionFields on TableFieldDescription {
+  isSortable
+  fieldDescription { ... FieldDescriptionFields }
+  isVisible
+  isSticky
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.reporting.base.table.TableReportDescription'
+"""The description for a table based report"""
+type TableReportDescription {
+  """Gets the label for the plural for the items in the table"""
+  plural: String
+
+  """Returns the report id for this report"""
+  reportId: BuiltInReport
+
+  """Returns the report's title"""
+  title: String
+
+  """The default sort order"""
+  defaultSortOrder: SortOrder
+
+  """Gets the list of all columns"""
+  columns: [TableFieldDescription]
+
+  """Gets the label for the singular for the items in the table"""
+  singular: String
+
+  """The list of filters"""
+  filters: [FieldFilter]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.common.reporting.base.table.TableReportDescription'
+fragment TableReportDescriptionFields on TableReportDescription {
+  plural
+  reportId
+  title
+  defaultSortOrder
+  columns { ... TableFieldDescriptionFields }
+  singular
+  filters { ... FieldFilterFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.datastructures.accounts.login.AccountData'
+"""Class for storing account data"""
+input AccountData {
+  """Login"""
+  login: String
+
+  """Password"""
+  password: String
+
+  """AccountType"""
+  accountType: AccountType
+
+  """Comment"""
+  comment: String
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.datastructures.accounts.snmp.SnmpV3AccountData'
+"""Class for storing snmp account data"""
+input SnmpV3AccountData {
+  """Login"""
+  login: String
+
+  """Password"""
+  password: String
+
+  """Privileged password"""
+  privPassword: String
+
+  """Comment"""
+  comment: String
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.rmiinterface.admin.license.DeviceCreditAllocation'
+"""Gets the credit allocation for the different tiers"""
+type DeviceCreditAllocation {
+  """The credit allocation for the list of remaining SNMP devices (tier 0)"""
+  baseAllocation: Int
+
+  """The credit allocation for Windows computers and switches/routers (tier 1)"""
+  tier1Allocation: Int
+
+  """The credit allocation for Linux, MAC OS X, VMware ESX serverfs (tier 2)"""
+  tier2Allocation: Int
+
+  """The credit allocation for the HP-UX, Solaris, and AIX servers (tier 3)"""
+  tier3Allocation: Int
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.common.rmiinterface.admin.license.DeviceCreditAllocation'
+fragment DeviceCreditAllocationFields on DeviceCreditAllocation {
+  baseAllocation
+  tier1Allocation
+  tier2Allocation
+  tier3Allocation
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.rmiinterface.admin.license.DeviceCreditCount'
+"""The number of devices licensed per tier"""
+type DeviceCreditCount {
+  """The number of devices counted assigned to tier 0 licenses"""
+  tier0Count: Long
+
+  """The number of devices counted assigned to tier 3 licenses"""
+  tier3Count: Long
+
+  """The number of devices counted assigned to tier 1 licenses"""
+  tier1Count: Long
+
+  """The number of devices counted assigned to tier 2 licenses"""
+  tier2Count: Long
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.common.rmiinterface.admin.license.DeviceCreditCount'
+fragment DeviceCreditCountFields on DeviceCreditCount {
+  tier0Count
+  tier3Count
+  tier1Count
+  tier2Count
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.rmiinterface.admin.license.LicenseInfo'
+"""The license information for the product"""
+type LicenseInfo {
+  """Gets the license start date. The license is not valid before that date."""
+  gqlLicenseStart: DateTime
+
+  """Gets the license expiration date. Null for perpetual licenses."""
+  gqlLicenseEnd: DateTime
+
+  """Gets the maximal number of licensed devices."""
+  deviceLimit: Int
+
+  """Gets the list of license sections for the add-ons."""
+  addOns: [LicenseSection]
+
+  """Gets the credits limit - null for unlimited licenses."""
+  creditsLimit: Long
+
+  """Gets the list of devices used for the license (in case of device count based license)."""
+  usedDevices: Int
+
+  """Gets the license status."""
+  status: LicenseStatus
+
+  """Gets the maximal number of licensed credits."""
+  edition: ProductEdition
+
+  """Gets the list of licensed add-ons."""
+  licensedAddOns: [AddOnProduct]
+
+  """Gets the number of used credits."""
+  calcUsedCredits: Long
+
+  """Gets the licensed sections (each product has its own section)"""
+  licenseSections: [LicenseSection]
+
+  """Gets the number of used credits."""
+  usedCredits: Long
+
+  """Gets the current licensed device counts per tier."""
+  creditCount: DeviceCreditCount
+
+  """Gets the credit allocation for the four tiers."""
+  creditAllocation: DeviceCreditAllocation
+
+  """Gets the maximal number of licensed credits."""
+  creditLimit: Long
+
+  """Gets the list of installed add-ons."""
+  installedAddOns: [AddOnProduct]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.common.rmiinterface.admin.license.LicenseInfo'
+fragment LicenseInfoFields on LicenseInfo {
+  gqlLicenseStart
+  gqlLicenseEnd
+  deviceLimit
+  addOns { ... LicenseSectionFields }
+  creditsLimit
+  usedDevices
+  status
+  edition
+  licensedAddOns
+  calcUsedCredits
+  licenseSections { ... LicenseSectionFields }
+  usedCredits
+  creditCount { ... DeviceCreditCountFields }
+  creditAllocation { ... DeviceCreditAllocationFields }
+  creditLimit
+  installedAddOns
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.rmiinterface.admin.license.LicenseKeyValue'
+"""A generic key value pair within the license"""
+type LicenseKeyValue {
+  """The value for the key/value pair"""
+  value: Object
+
+  """The key for the key/value pair"""
+  key: String
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.common.rmiinterface.admin.license.LicenseKeyValue'
+fragment LicenseKeyValueFields on LicenseKeyValue {
+  value
+  key
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.rmiinterface.admin.license.LicenseSection'
+"""A license section within the license file"""
+type LicenseSection {
+  """The license section name"""
+  name: String
+
+  """The license section label"""
+  label: String
+
+  """The license section status"""
+  status: LicenseStatus
+
+  """Flag whether the signature is valid"""
+  validSignature: Boolean!
+
+  """License key values"""
+  licenseKeyValues: [LicenseKeyValue]
+
+  """Actual device values"""
+  actualKeyValues: [LicenseKeyValue]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.common.rmiinterface.admin.license.LicenseSection'
+fragment LicenseSectionFields on LicenseSection {
+  name
+  label
+  status
+  validSignature
+  licenseKeyValues { ... LicenseKeyValueFields }
+  actualKeyValues { ... LicenseKeyValueFields }
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.rmiinterface.admin.users.InventoryUserGroupInfo'
+"""User groups"""
+type InventoryUserGroupInfo {
+  """User group id"""
+  id: Long
+
+  """User group name"""
+  name: String
+
+  """User group description"""
+  descr: String
+
+  """User group rights"""
+  rights: [InventoryUserRight]
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.common.rmiinterface.admin.users.InventoryUserGroupInfo'
+fragment InventoryUserGroupInfoFields on InventoryUserGroupInfo {
+  id
+  name
+  descr
+  rights
+}
+
+# Mapping for Java class 'com.jdisc.inventory.webui.datastructures.common.Location'
+"""An object's location."""
+type Location {
+  """the location on the x-axis."""
+  x: Int!
+
+  """the location on the y-axis."""
+  y: Int!
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.webui.datastructures.common.Location'
+fragment LocationFields on Location {
+  x
+  y
+}
+
+# Mapping for Java class 'com.jdisc.inventory.webui.datastructures.common.Location'
+"""An object's location."""
+input LocationInput {
+  """the location on the x-axis."""
+  x: Int!
+
+  """the location on the y-axis."""
+  y: Int!
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.webui.datastructures.common.Size'
+"""The size of an object."""
+type Size {
+  """The width."""
+  width: Int!
+
+  """The height."""
+  height: Int!
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.webui.datastructures.common.Size'
+fragment SizeFields on Size {
+  width
+  height
+}
+
+# Mapping for Java class 'com.jdisc.inventory.webui.datastructures.common.Size'
+"""The size of an object."""
+input SizeInput {
+  """The width."""
+  width: Int!
+
+  """The height."""
+  height: Int!
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.webui.datastructures.preferences.dashboard.DashboardItemLocation'
+"""A dashboard item location."""
+type DashboardItemLocation {
+  """The dashboard id identifying the dashboard item."""
+  id: String
+
+  """the dashboard item location in the dashboard grid."""
+  location: Location
+
+  """the dashboard size in the dashboard grid."""
+  size: Size
+
+  """a flag whether the dashboard item is visible."""
+  visible: Boolean!
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.webui.datastructures.preferences.dashboard.DashboardItemLocation'
+fragment DashboardItemLocationFields on DashboardItemLocation {
+  id
+  location { ... LocationFields }
+  size { ... SizeFields }
+  visible
+}
+
+# Mapping for Java class 'com.jdisc.inventory.webui.datastructures.preferences.dashboard.DashboardItemLocation'
+"""A dashboard item location."""
+input DashboardItemLocationInput {
+  """The dashboard id identifying the dashboard item."""
+  id: String
+
+  """the dashboard item location in the dashboard grid."""
+  location: LocationInput
+
+  """the dashboard size in the dashboard grid."""
+  size: SizeInput
+
+  """a flag whether the dashboard item is visible."""
+  visible: Boolean!
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.webui.datastructures.preferences.uiprefs.PreferencesKeyValuePair'
+"""A key value pair for preferences"""
+input PreferencesKeyValuePairInput {
+  """The key"""
+  key: String
+
+  """The value"""
+  value: Object
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.webui.datastructures.preferences.uiprefs.WebUIPreferences'
+"""The WEB UI user preferences."""
+type WebUIPreferences {
+  """The user interface density."""
+  density: UIDensity
+
+  """The user interface theme."""
+  theme: UITheme
+
+}
+
+# Fragment for Java class 'com.jdisc.inventory.webui.datastructures.preferences.uiprefs.WebUIPreferences'
+fragment WebUIPreferencesFields on WebUIPreferences {
+  density
+  theme
+}
+
+# Mapping for Java class 'com.jdisc.inventory.webui.datastructures.preferences.uiprefs.WebUIPreferences'
+"""The WEB UI user preferences."""
+input WebUIPreferencesInput {
+  """The user interface density."""
+  density: UIDensity
+
+  """The user interface theme."""
+  theme: UITheme
+
+}
+
+# Mapping for Java class 'com.jdisc.inventory.jpa.repositories.DeviceRepository'
+"""This type provides device related queries"""
+type Devices {
+  """Find devices by id"""
+  findByIds(ids: [Long]): [Device]
+
+  """Finds all devices where type matches one of the types passed as argument."""
+  findByTypes(types: [DeviceType]): [Device]
+
+  """Find devices that are part of an IP6 network. Note: A device can be part of multiple networks!"""
+  findDevicesInIP6Network(ip6NetworkReference: IP6NetworkReference): [Device]
+
+  """Find devices by id"""
+  findByID(id: Long!): Device
+
+  """Find devices that are part of an IP4 network. Note: A device can be part of multiple networks!"""
+  findDevicesInIP4Network(ip4NetworkReference: IP4NetworkReference): [Device]
+
+  """Find devices with a physical address (mac address or WWN)."""
+  findDevicesWithPhysicalAddress(physicalAddress: String): [Device]
+
+  """Find devices by name. The default for caseSenstitive is TRUE."""
+  findByName(name: String, caseSensitive: Boolean): [Device]
+
+  """Find devices by type"""
+  findByType(type: DeviceType): [Device]
+
+  """Find all devices"""
+  findAll: [Device]
+
+  """Finds all devices with an IP address.
+The activeOnly indicates whether to search only for IP addresses on active interfaces.
+When the activeOnly is FALSE, then we are also looking on interfaces with a status other than 'up'.
+The default for the activeOnly is TRUE"""
+  findDevicesByIPAddress(ipAddress: String, activeOnly: Boolean): [Device]
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.administration.Administration'
+"""Queries for administration purposes"""
+type Administration {
+  """Gets the current certificate information used for the WEB server."""
+  webServerCertificate: CertificateInfo
+
+  """Parses a certificate byte stream and returns the certificate info (if there is some)."""
+  parseWebServerCertificate(certificateBytes: [Int]): CertificateResult
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.configuration.Configuration'
+"""Queries about configuring objects"""
+type Configuration {
+  """Gets the application configuration queries"""
+  applicationConfiguration: ApplicationConfiguration
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.management.Management'
+"""Queries about managing objects"""
+type Management {
+  """Gets the user management queries."""
+  userManagement: UserManagement
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.monitoring.Monitoring'
+"""The monitoring API lets you query the application's health and operation parameters"""
+type Monitoring {
+  """Gets information about the memory usage"""
+  memoryStatistics: MemoryStatistics
+
+  """The web server caches information in order to speed up the client operation.
+This call returns the list of caches together with the number of entries.
+
+Constantly growing cache sizes are an indication for a memory leak!"""
+  cacheStatistics: [CacheStatisticsEntry]
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.networking.Networking'
+"""Queries for networking related items"""
+type Networking {
+  """Gets the network topology layer 2 connections."""
+  topologyConnections: TopologyConnections
+
+  """Gets the network interface related connections."""
+  networkInterfaces: NetworkInterfaces
+
+  """Gets the IP6 network related queries."""
+  ip6Networks: IP6Networks
+
+  """Gets the directory related queries."""
+  directories: Directories
+
+  """Gets the IP4 network related queries."""
+  ip4Networks: IP4Networks
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.progress.OperationProgress'
+"""Use the operation progress API to query the status of async operations!
+Whenever you call a async operation (methods are marked with the async suffix), JDisc Discovery creates a ProgressInfo
+object which hold information about the operation (percentage done, current operation). Finally, when the task is done, then
+the specific ProgressInfo object may hold additional information about the task (e.g. results, ...)"""
+type OperationProgress {
+  """Returns the progress info for a event deletion job. When successful, the eventsNotFound property holds the
+list of events which could not be found in the database!"""
+  eventDeletionProgressInfo(instanceId: String): EventDeletionProgressInfo
+
+  """Returns the progress info for a datacenter deletion job. When successful, the datacentersNotFound property holds the
+list of datacenters which could not be found in the database!"""
+  datacenterDeletionProgressInfo(instanceId: String): DatacenterDeletionProgressInfo
+
+  """Gets the list of all progress info objects in the cache."""
+  all: [ProgressInfo]
+
+  """Returns the progress info for a progress information object"""
+  progressInfo(instanceId: String): ProgressInfo
+
+  """Returns the progress info for a cluster deletion job. When successful, the clustersNotFound property holds the
+list of clusters which could not be found in the database!"""
+  clusterDeletionProgressInfo(instanceId: String): ClusterDeletionProgressInfo
+
+  """Returns the progress info for a device deletion job. When successful, the devicesNotFound property holds the
+list of devices which could not be found in the database!"""
+  deviceDeletionProgressInfo(instanceId: String): DeviceDeletionProgressInfo
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.reporting.Reporting'
+"""Queries about reports and their descriptions"""
+type Reporting {
+  """Gets all field descriptions."""
+  fieldDescriptions: [FieldDescription]
+
+  """Removes the cache for a cached report. Returns true, when the cache id has been found. Otherwise false."""
+  removeCachedReport(instanceId: String): Boolean!
+
+  """Get the values for a table."""
+  tableData(reportConfig: TableReportConfigInput): TableResult
+
+  """Get a table report description for a specific report id and filters"""
+  tableReportDescription(reportId: BuiltInReport, filters: [FieldFilterInput]): TableReportDescription
+
+  """Get the values for a scalar table."""
+  scalarData(reportConfig: ScalarReportConfigInput): ScalarResult
+
+  """Get a report description for a specific report id and filters.
+This call can return any type of report description (table, scalar, ...)."""
+  reportDescription(reportId: BuiltInReport, filters: [FieldFilterInput]): ReportDescription
+
+  """Get a table report description for a specific report id and filters"""
+  scalarReportDescription(reportId: BuiltInReport, filters: [FieldFilterInput]): ScalarReportDescription
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.software.Software'
+"""Queries for software related items"""
+type Software {
+  """Patch related queries."""
+  patches: Patches
+
+  """Service/Daemon installation queries."""
+  installedServices: InstalledServices
+
+  """Service/Daemon related queries."""
+  services: Services
+
+  """Application related queries."""
+  applications: Applications
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.query.virtualization.Virtualization'
+"""Queries for virtualization related items"""
+type Virtualization {
+  """Virtual datacenters related queries."""
+  virtualDatacenters: VirtualDatacenters
+
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.administration.AdministrationMutation'
+type AdministrationMutation {
+  """Installs a new certificate in the WEB server. Note that the WEB server restarts after this call!"""
+  installWebServerCertificate(certificateBytes: [Int], password: String): Status
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.administration.AdministrationMutation'
+fragment AdministrationMutationFields on AdministrationMutation {
+  installWebServerCertificate(certificateBytes: [Int], password: String)
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.discovery.DiscoveryMutation'
+type DiscoveryMutation {
+  """Gets the discovery trigger methods."""
+  trigger: TriggerDiscovery
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.discovery.DiscoveryMutation'
+fragment DiscoveryMutationFields on DiscoveryMutation {
+  trigger { ... TriggerDiscoveryFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.discovery.TriggerDiscovery'
+type TriggerDiscovery {
+  """Sample method to create an exception on the server in order for Pavel to test his error handling dialogs"""
+  crashServer: Boolean!
+
+  """Triggers the scan for an IP address or hostname. Returns true when the device has been added to the queue or false,
+if - for instance - the hostname could not be resolved"""
+  triggerDeviceScan(ipOrHostname: String): Boolean!
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.discovery.TriggerDiscovery'
+fragment TriggerDiscoveryFields on TriggerDiscovery {
+  crashServer
+  triggerDeviceScan(ipOrHostname: String)
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.login.LoginLogout'
+"""This is the primary authentication interface used to login and logout.
+
+A login call requires a username and a password for the authentication. On successful authentication, the call returns an
+ - access token
+ - renewal token
+
+The access token must be added to the HTTPS request headers to ensure a user has access to the appropriate resources.
+An access token has usually a limited lifetime. This is done for various security reasons: for one, limiting the lifetime
+of the access token limits the amount of time an attacker can use a stolen token. In addition, the information contained
+in or referenced by the access token could become stale.
+When access tokens expire or become invalid but the application still needs to access a protected resource, the application
+faces the problem of getting a new access token without forcing the user to once again grant permission. To solve this problem,
+a refresh token is introduced. A refresh token allows an application to obtain a new access token without prompting the user.
+
+The access token must be added into the HTTPS header as parameter "Authorization". The value must be the String "Bearer"
+followed by a space and the access token. When the access token has expired, then the server returns an SC_UNAUTHORIZED (401)
+In this case, you might use the refresh token to obtain a new access and refresh token using the refreshAccessToken call.
+The GraphQL also returns an SC_UNAUTHORIZED (401) when the renewal token has expired."""
+type LoginLogout {
+  """Checks the access token and returns false when it is invalid."""
+  checkAccessToken(accessToken: String): Boolean!
+
+  """Logout the current session. Always returns true as a return value is required by GraphQL"""
+  logout(accessToken: String): Boolean!
+
+  """Use the refresh token to obtain a new access and refresh token when the previous access token expired"""
+  refreshAccessToken(refreshToken: String): LoginResult
+
+  """Callback to inform Web UI backend, that Web frontend client is still active"""
+  pongSessionAlive: PongRequest
+
+  """Login to obtain an access token"""
+  login(login: String, password: String): LoginResult
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.login.LoginLogout'
+fragment LoginLogoutFields on LoginLogout {
+  checkAccessToken(accessToken: String)
+  logout(accessToken: String)
+  refreshAccessToken(refreshToken: String) { ... LoginResultFields }
+  pongSessionAlive { ... PongRequestFields }
+  login(login: String, password: String) { ... LoginResultFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.cluster.ClusterManagementMutation'
+type ClusterManagementMutation {
+  """Deletes clusters. Returns a progress object that the client can poll for the task status. (async call)"""
+  deleteClustersAsync(clusters: [ClusterReference]): ClusterDeletionProgressInfo
+
+  """Deletes clusters. Returns a list of clusters that could not be found or an empty list if succesfull. (sync call)."""
+  deleteClusters(clusters: [ClusterReference]): [Cluster]
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.cluster.ClusterManagementMutation'
+fragment ClusterManagementMutationFields on ClusterManagementMutation {
+  deleteClustersAsync(clusters: [ClusterReference]) { ... ClusterDeletionProgressInfoFields }
+  deleteClusters(clusters: [ClusterReference]) { ... ClusterFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.datacenter.DatacenterManagementMutation'
+type DatacenterManagementMutation {
+  """Deletes virtual datacenters. Returns a list of virtual datacenters that could not be found or an empty list if succesfull. (sync call)."""
+  deleteVirtualDatacenters(virtualDatacenters: [DatacenterReference]): [VirtualDatacenter]
+
+  """Deletes virtual datacenters. Returns a progress object that the client can poll for the task status. (async call)"""
+  deleteDatacentersAsync(datacenters: [DatacenterReference]): DatacenterDeletionProgressInfo
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.datacenter.DatacenterManagementMutation'
+fragment DatacenterManagementMutationFields on DatacenterManagementMutation {
+  deleteVirtualDatacenters(virtualDatacenters: [DatacenterReference]) { ... VirtualDatacenterFields }
+  deleteDatacentersAsync(datacenters: [DatacenterReference]) { ... DatacenterDeletionProgressInfoFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.devices.DeviceManagementMutation'
+type DeviceManagementMutation {
+  """Set account information to discover the given devices. Returns a list of devices that could not be found or an empty list if succesfull."""
+  setSshAccounts(devices: [DeviceReference], account: GraphQLSshAccount): [Device]
+
+  """Set HTTP account information to discover the given devices. Returns a list of devices that could not be found or an empty list if succesfull."""
+  setHttpAccounts(devices: [DeviceReference], account: AccountData): [Device]
+
+  """Deletes devices from the database. Returns a list of devices that could not be found or an empty list if succesfull. (sync call).
+The comment is being written to the device deletion log as deletion comment!"""
+  deleteDevices(devices: [DeviceReference], comment: String): [Device]
+
+  """Set database account information to discover the given device. Returns <true> if succesfull."""
+  setDatabaseAccount(device: DeviceReference): Boolean!
+
+  """Set SNMP account information to discover the given devices. Returns a list of devices that could not be found or an empty list if succesfull."""
+  setSnmpAccounts(devices: [DeviceReference], community: String, snmpAccount: SnmpV3AccountData): [Device]
+
+  """Deletes devices from the database. Returns a progress object that the client can poll for the task status. (async call)
+The comment is being written to the device deletion log as deletion comment!"""
+  deleteDevicesAsync(devices: [DeviceReference], comment: String): DeviceDeletionProgressInfo
+
+  """Deletes a device. Returns <true> if succesfull.
+ The comment is being written to the device deletion log as deletion comment!"""
+  deleteDevice(deviceRef: DeviceReference, comment: String): Boolean!
+
+  """Set account information to discover the given devices. Returns a list of devices that could not be found or an empty list if succesfull."""
+  setAccounts(devices: [DeviceReference], userAccount: AccountData, adminAccount: AccountData): [Device]
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.devices.DeviceManagementMutation'
+fragment DeviceManagementMutationFields on DeviceManagementMutation {
+  setSshAccounts(devices: [DeviceReference], account: GraphQLSshAccount) { ... DeviceFields }
+  setHttpAccounts(devices: [DeviceReference], account: AccountData) { ... DeviceFields }
+  deleteDevices(devices: [DeviceReference], comment: String) { ... DeviceFields }
+  setDatabaseAccount(device: DeviceReference)
+  setSnmpAccounts(devices: [DeviceReference], community: String, snmpAccount: SnmpV3AccountData) { ... DeviceFields }
+  deleteDevicesAsync(devices: [DeviceReference], comment: String) { ... DeviceDeletionProgressInfoFields }
+  deleteDevice(deviceRef: DeviceReference, comment: String)
+  setAccounts(devices: [DeviceReference], userAccount: AccountData, adminAccount: AccountData) { ... DeviceFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.event.EventManagementMutation'
+type EventManagementMutation {
+  """Deletes events. Returns a progress object that the client can poll for the task status. (async call)"""
+  deleteEventssAsync(events: [EventReference]): EventDeletionProgressInfo
+
+  """Deletes events. Returns a list of events that could not be found or an empty list if succesfull. (sync call)."""
+  deleteEvents(events: [EventReference]): [Event]
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.event.EventManagementMutation'
+fragment EventManagementMutationFields on EventManagementMutation {
+  deleteEventssAsync(events: [EventReference]) { ... EventDeletionProgressInfoFields }
+  deleteEvents(events: [EventReference]) { ... EventFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.ManagementMutation'
+"""Objects for managing the application."""
+type ManagementMutation {
+  """Gets the device management object."""
+  deviceManagement: DeviceManagementMutation
+
+  """Gets the datacenter management object."""
+  datacenterManagement: DatacenterManagementMutation
+
+  """Gets the cluster management object."""
+  clusterManagement: ClusterManagementMutation
+
+  """Gets the event management object."""
+  eventManagement: EventManagementMutation
+
+  """Gets the user management object."""
+  userManagement: UserManagementMutation
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.ManagementMutation'
+fragment ManagementMutationFields on ManagementMutation {
+  deviceManagement { ... DeviceManagementMutationFields }
+  datacenterManagement { ... DatacenterManagementMutationFields }
+  clusterManagement { ... ClusterManagementMutationFields }
+  eventManagement { ... EventManagementMutationFields }
+  userManagement { ... UserManagementMutationFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.user.preferences.dashboard.DashboardPreferencesMutation'
+"""Modify dashboard settings"""
+type DashboardPreferencesMutation {
+  """Sets the location for a dashboard item."""
+  setLocation(dashboardItem: DashboardItemLocationInput): Boolean!
+
+  """Sets the location for a dashboard item."""
+  setLocations(dashboardItem: [DashboardItemLocationInput]): Boolean!
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.user.preferences.dashboard.DashboardPreferencesMutation'
+fragment DashboardPreferencesMutationFields on DashboardPreferencesMutation {
+  setLocation(dashboardItem: DashboardItemLocationInput)
+  setLocations(dashboardItem: [DashboardItemLocationInput])
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.user.preferences.UserPreferencesMutation'
+"""Modify user preferences."""
+type UserPreferencesMutation {
+  """Gets the WEB UI preferences."""
+  setWebUIPreferences(preferences: WebUIPreferencesInput): Boolean!
+
+  """Gets the settings object for dashboard items."""
+  dashboardPreferences: DashboardPreferencesMutation
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.user.preferences.UserPreferencesMutation'
+fragment UserPreferencesMutationFields on UserPreferencesMutation {
+  setWebUIPreferences(preferences: WebUIPreferencesInput)
+  dashboardPreferences { ... DashboardPreferencesMutationFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.user.UserManagementMutation'
+"""Objects for managing user related aspects."""
+type UserManagementMutation {
+  """Gets the user preferences."""
+  preferences: UserPreferencesMutation
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.management.user.UserManagementMutation'
+fragment UserManagementMutationFields on UserManagementMutation {
+  preferences { ... UserPreferencesMutationFields }
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.progress.OperationProgressMutation'
+"""Mutations about reports and their descriptions"""
+type OperationProgressMutation {
+  """bla"""
+  removeProgressInfo(instanceId: String): Boolean!
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.progress.OperationProgressMutation'
+fragment OperationProgressMutationFields on OperationProgressMutation {
+  removeProgressInfo(instanceId: String)
+}
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.mutations.reporting.ReportingMutation'
+"""Control the caching entries for the reporting server."""
+type ReportingMutation {
+  """Deletes report cache entries when no longer needed. Returns the number of deleted entries."""
+  deleteCacheItems(reportCacheIds: [String]): Int!
+
+  """Deletes report cache entries when no longer needed. Returns the number of deleted entries."""
+  deleteCacheItem(reportCacheId: String): Boolean!
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.mutations.reporting.ReportingMutation'
+fragment ReportingMutationFields on ReportingMutation {
+  deleteCacheItems(reportCacheIds: [String])
+  deleteCacheItem(reportCacheId: String)
+}
+
+# Mapping for Java class 'com.jdisc.inventory.common.reporting.base.ReportDescription'
+"""The result type for different report description types"""
+union ReportDescription = TableReportDescription | ScalarReportDescription
+
+# Mapping for Java class 'com.jdisc.webui.server.graphql.api.subscriptions.login.LiveSessionSubscription'
+type LiveSessionSubscription {
+  """Checks if client is still active for given access token and returns session state."""
+  isSessionAlive(accessToken: String): PongRequest
+
+}
+
+# Fragment for Java class 'com.jdisc.webui.server.graphql.api.subscriptions.login.LiveSessionSubscription'
+fragment LiveSessionSubscriptionFields on LiveSessionSubscription {
+  isSessionAlive(accessToken: String) { ... PongRequestFields }
+}
+
+
+# Root queries
+type Query {
+  """This type provides device related queries"""
+  devices: Devices!
+  """Queries for administration purposes"""
+  administration: Administration!
+  """Queries about configuring objects"""
+  configuration: Configuration!
+  """Queries about managing objects"""
+  management: Management!
+  """The monitoring API lets you query the application's health and operation parameters"""
+  monitoring: Monitoring!
+  """Queries for networking related items"""
+  networking: Networking!
+  """Use the operation progress API to query the status of async operations!
+Whenever you call a async operation (methods are marked with the async suffix), JDisc Discovery creates a ProgressInfo
+object which hold information about the operation (percentage done, current operation). Finally, when the task is done, then
+the specific ProgressInfo object may hold additional information about the task (e.g. results, ...)"""
+  operationProgress: OperationProgress!
+  """Queries about reports and their descriptions"""
+  reporting: Reporting!
+  """Queries for software related items"""
+  software: Software!
+  """Queries for virtualization related items"""
+  virtualization: Virtualization!
+}
+
+# Root mutations...
+type Mutation {
+  administration: AdministrationMutation!
+
+  discovery: DiscoveryMutation!
+
+  """This is the primary authentication interface used to login and logout.
+
+A login call requires a username and a password for the authentication. On successful authentication, the call returns an
+ - access token
+ - renewal token
+
+The access token must be added to the HTTPS request headers to ensure a user has access to the appropriate resources.
+An access token has usually a limited lifetime. This is done for various security reasons: for one, limiting the lifetime
+of the access token limits the amount of time an attacker can use a stolen token. In addition, the information contained
+in or referenced by the access token could become stale.
+When access tokens expire or become invalid but the application still needs to access a protected resource, the application
+faces the problem of getting a new access token without forcing the user to once again grant permission. To solve this problem,
+a refresh token is introduced. A refresh token allows an application to obtain a new access token without prompting the user.
+
+The access token must be added into the HTTPS header as parameter "Authorization". The value must be the String "Bearer"
+followed by a space and the access token. When the access token has expired, then the server returns an SC_UNAUTHORIZED (401)
+In this case, you might use the refresh token to obtain a new access and refresh token using the refreshAccessToken call.
+The GraphQL also returns an SC_UNAUTHORIZED (401) when the renewal token has expired."""
+  authentication: LoginLogout!
+
+  """Objects for managing the application."""
+  management: ManagementMutation!
+
+  """Mutations about reports and their descriptions"""
+  operationProgress: OperationProgressMutation!
+
+  """Control the caching entries for the reporting server."""
+  reporting: ReportingMutation!
+
+}
+
+# Root subscriptions...
+type Subscription {
+  # Mapping for Java class 'com.jdisc.webui.server.graphql.api.subscriptions.login.LiveSessionSubscription'
+  """Checks if client is still active for given access token and returns session state."""
+  isSessionAlive(accessToken: String): PongRequest
+
+
+
+}
