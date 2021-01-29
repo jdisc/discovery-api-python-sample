@@ -38,7 +38,6 @@ def login(url, user, password):
         """
     )
     result = client.execute(query, variable_values={'user': user, 'password': password})
-    print(result)
     return connect(url, result.get('authentication').get('login').get('accessToken'),
                    result.get('authentication').get('login').get('refreshToken'))
 
@@ -114,9 +113,7 @@ def get_all_software_instances(client):
 # build BOM components from applications
 def build_components(results):
     components = []
-    print(result)
     for app in results.get('software').get('applications').get('findAll'):
-        print(app)
         comp = Component(
             name=app.get('name'),
             version=app.get('version'),
