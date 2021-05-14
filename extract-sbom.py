@@ -3,43 +3,16 @@
 # Press Umschalt+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import sys
+import jdisc
 
 import cyclonedx
 from cyclonedx.models import Component
 from gql import Client, gql
-from gql.transport.requests import RequestsHTTPTransport
 import argparse
 
 from packageurl import PackageURL
 from cyclonedx.bom import generator
 
-
-def connect(url, accessToken, refreshToken):
-    transport = RequestsHTTPTransport(url=url, verify=False, retries=3, headers={'Authorization': f'Bearer {accessToken}'})
-    return Client(transport=transport, fetch_schema_from_transport=True), accessToken, refreshToken
-
-#
-# authenticate with JDisc server using a mutation
-#
-def login(url, user, password):
-    transport = RequestsHTTPTransport(url=url, verify=False, retries=3)
-    client = Client(transport=transport, fetch_schema_from_transport=True)
-    query = gql(
-        """
-        mutation($user: String, $password: String) {
-          authentication {
-            login(login: $user, password: $password) {
-              status
-              accessToken
-              refreshToken
-            }
-          }
-        }
-        """
-    )
-    result = client.execute(query, variable_values={'user': user, 'password': password})
-    return connect(url, result.get('authentication').get('login').get('accessToken'),
-                   result.get('authentication').get('login').get('refreshToken'))
 
 # return id of network
 def get_networks_by_ipaddress(ipaddr):
@@ -146,7 +119,7 @@ if __name__ == '__main__':
     print(f"Generate SBOM for networks {args.network}")
 
     # connect to server
-    client, accessToken, refreshToken = login(args.server, args.user, args.password)
+    client, accessToken, refreshToken = jdisc.login(args.server, args.user, args.password)
 
     # get software instances from server
     result = get_all_software_instances(client)
