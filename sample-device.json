@@ -1,0 +1,24 @@
+{
+  "type": "Smartphone",
+  "model": "iPhone XR",
+  "name": "iPhone",
+  "serialNumber": "FM4711XXX",
+  "operatingSystem": {
+    "osFamily": "IOS",
+    "osVersion": "14.5.1",
+    "manufacturer": "Apple",
+    "systemType": "A8"
+  },
+  "mobileBroadbandDevices": [
+    {
+      "model": "test",
+      "imei": "12345",
+      "guid": "guid-123",
+      "simCard": {
+        "imsi": "imsi-123",
+        "iccid": "iccid",
+        "phoneNumber": "+4912324"
+      }
+    }
+  ]
+}

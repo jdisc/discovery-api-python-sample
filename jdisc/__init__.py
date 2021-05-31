@@ -12,7 +12,7 @@ def connect(url, accessToken, refreshToken):
 
 def login(url, user, password):
     transport = RequestsHTTPTransport(url=url, verify=False, retries=1)
-    client = Client(transport=transport, fetch_schema_from_transport=True)
+    client = Client(transport=transport, fetch_schema_from_transport=False)
     query = gql(
         """
         mutation($user: String, $password: String) {
