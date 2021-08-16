@@ -14,15 +14,17 @@ def upload_device(client, device):
         """
         mutation($device: DeviceInput) {
           importManager {
-            importDevice(device: $device) {
-              warnings
-              errors
+            devices {
+              importDevice(device: $device) {
+                warnings
+                errors
+              }
             }
           }
         }
         """)
     result = client.execute(query, variable_values={'device': device})
-    return result.get('importManager').get('importDevice').get('errors')
+    return result.get('importManager').get('devices').get('importDevice').get('errors')
 
 
 # Press the green button in the gutter to run the script.
